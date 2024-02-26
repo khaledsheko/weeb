@@ -19,7 +19,7 @@ a{
   color: var(--white);
   width: 150px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 .sec-padding{
   padding-bottom: var(--sec-padding);
@@ -241,7 +241,7 @@ a{
   border: 1px solid var(--btn-color);
   color: var(--btn-color);
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 .subscribe form .email-section{
   width: 100%;
