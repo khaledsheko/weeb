@@ -10,6 +10,7 @@
   --back-icon: #faf0e6;
   --icon-link: #c9ab62;
   --sec-padding: 100px;
+  --footer-back: #372e29;
 }
 a{
   text-decoration: none;
@@ -266,4 +267,27 @@ a{
   outline: none;
   border: none;
   font-size: 18px;
+}
+.footer{
+  background-color: var(--footer-back);
+  color: var(--white);
+  padding: 100px 0;
+}
+.footer .title{
+  margin-bottom: 25px;
+}
+.footer li a{
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer ul{
+  padding: 0;
+}
+.footer li{
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.footer ul.social li svg{
+  margin-right: 5px;
 }
