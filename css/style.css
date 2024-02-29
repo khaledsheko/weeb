@@ -40,6 +40,44 @@ a{
   height: 1px;
   background-color: var(--black);
   bottom: -5px;
+  transition: .3s;
+  left: 0;
+}
+.btn-link:hover::after{
+  width: 0;
+}
+.navbar a{
+  color: var(--black);
+}
+.navbar .icons a{
+  margin-left: 25px;
+}
+.navbar .navbar-brand{
+  position: absolute;
+  left: 50%;
+  transform: translateX(calc(50% - 100%));
+}
+.navbar .navbar-brand img{
+  width: 30px;
+}
+.navbar-nav .nav-link{
+  position: relative;
+  transition: .3s;
+  margin-right: 25px;
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+.navbar-nav .nav-link:hover::after{
+  width: 100%;
+}
+.navbar-nav .nav-link::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: var(--black);
+  bottom: -5px;
+  transition: .2s;
   left: 0;
 }
 .head-nav .header-des .main-des{
