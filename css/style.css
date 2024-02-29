@@ -46,6 +46,13 @@ a{
 .btn-link:hover::after{
   width: 0;
 }
+.head-nav .up-nav{
+  padding: 10px 0;
+  background-color: var(--black);
+}
+.head-nav .up-nav a{
+  color: var(--white);
+}
 .navbar a{
   color: var(--black);
 }
