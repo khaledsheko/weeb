@@ -15,6 +15,7 @@
   --icon-link: #c9ab62;
   --sec-padding: 100px;
   --footer-back: #372e29;
+  --btn-m-top: 80px;
 }
 a{
   text-decoration: none;
@@ -24,6 +25,9 @@ a{
   color: var(--white);
   margin: 0 auto;
   padding: 15px 40px;
+}
+.btn-section{
+  margin-top: var(--btn-m-top);
 }
 .sec-padding{
   padding-bottom: var(--sec-padding);
