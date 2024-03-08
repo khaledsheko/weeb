@@ -49,7 +49,7 @@
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form> -->
           <div class="icons d-flex ms-auto">
-            <div class="profile"><a href="#"><i class="fa-solid fa-user"></i></a></div>
+            <div class="profile"><a href="#" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fa-solid fa-user"></i></a></div>
             <div class="cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
             <div class="search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
           </div>
@@ -540,6 +540,162 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="modals">
+    <div class="modal fade mt-5" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- tabs modal login & signup -->
+          <div class="login-signup mx-auto mb-3">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="tab-btn active" id="pills-login-tab" data-bs-toggle="pill" data-bs-target="#pills-login"
+                  type="button" role="tab" aria-controls="pills-login" aria-selected="true">
+                  Login
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="tab-btn sign" id="pills-signup-tab" data-bs-toggle="pill" data-bs-target="#pills-signup"
+                  type="button" role="tab" aria-controls="pills-signup" aria-selected="false">
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- modal body -->
+          <div class="modal-body">
+            <div class="tab-content" id="pills-tabContent">
+              <!-- login tab -->
+              <div class="tab-pane show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab"
+                tabindex="0">
+                <form class="container-fluid login-form">
+                  <div class="row">
+                    <!-- social -->
+                    <div class="social text-center mb-5">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                    <div class="col-8 mx-auto">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required/>
+                        <label for="floatingInput">Email</label>
+                      </div>
+                    </div>
+                    <div class="col-8 mx-auto">
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required/>
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                    </div>
+                    <div class="col-8 mx-auto mt-3">
+                      <div class="form-check text-center">
+                        <input class="form-check-input" type="checkbox" value="" id="loginCheck" />
+                        <label class="form-check-label" for="loginCheck">
+                          Remember me
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-8 mx-auto text-center mt-3">
+                      <div class="form-floating">
+                        <button class="btn-login w-100" type="submit">
+                          Login
+                        </button>
+                      </div>
+                      <a class="mt-3 d-block link-color" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"
+                        href="#">forget password?</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- signup tab -->
+              <div class="tab-pane" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab" tabindex="0">
+                <form class="container-fluid signup-form">
+                  <div class="row">
+                    <div class="social text-center mb-5">
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInputName" placeholder="name@example.com" required/>
+                        <label for="floatingInputName">Name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInputEmail"
+                          placeholder="name@example.com" required/>
+                        <label for="floatingInputEmail">Email</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required/>
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPasswordConf" placeholder="Password" required/>
+                        <label for="floatingPasswordConf">Confirm Password</label>
+                      </div>
+                    </div>
+                    <div class="col-12 mx-auto text-center mt-3">
+                      <div class="form-floating">
+                        <button class="btn-sign w-100" type="submit">
+                          Sign Up
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- forget password modal -->
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3"
+      tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="container-fluid forget-password">
+              <div class="row">
+                <div class="col-8 mx-auto">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com" required/>
+                    <label for="floatingInputEmail">Email</label>
+                  </div>
+                </div>
+                <div class="col-8 mx-auto text-center mt-2">
+                  <div class="form-floating">
+                    <button class="btn-reset w-100" type="submit">
+                      Reset Password
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer mx-auto d-block col-7 text-center">
+            <a class="d-block my-3 link-color" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" href="#">Back to
+              login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button> -->
   </div>
   <script src='js/bootstrap.bundle.min.js'></script>
   <script src='js/all.min.js'></script>
