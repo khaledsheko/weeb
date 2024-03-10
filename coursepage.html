@@ -8,6 +8,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='css/all.min.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
   <title>Page Title</title>
 </head>
@@ -66,15 +67,15 @@
         <div class="col-lg-9 col-md-12">
           <div class="course-info">
             <!-- tabs -->
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Overview</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Chefs</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</button>
               </li>
             </ul>
             <!-- content -->
@@ -97,8 +98,94 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
                 </div>
               </div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+              <!-- chefs -->
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <!-- Swiper -->
+                <div class="swiper chefsSwiper">
+                  <div class="swiper-wrapper">
+                    <!-- item -->
+                    <div class="swiper-slide">
+                      <!-- img -->
+                      <div class="img"><img src="img/course/1.jpg" alt=""></div>
+                      <div class="description">
+                        <div class="name"><h5><a href="#">Edward Norton</a></h5></div>
+                        <div class="category"><span>Design Expert</span></div>
+                        <div class="info">Consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ulla mco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate.                        </div>
+                      </div>
+                    </div>
+                    <!-- item -->
+                    <div class="swiper-slide">
+                      <!-- img -->
+                      <div class="img"><img src="img/course/1.jpg" alt=""></div>
+                      <div class="description">
+                        <div class="name"><h5><a href="#">Edward Norton</a></h5></div>
+                        <div class="category"><span>Design Expert</span></div>
+                        <div class="info">Consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua enim minim veniam quis nostrud exercitation ulla mco laboris nisi ut aliquip ex ea commodo consequat. duis aute irure dolor in reprehenderit in voluptate.                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="swiper-pagination"></div> -->
+                </div>
+              </div>
+              <!-- Reviews -->
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                <div class="reviews">
+                  <!-- item -->
+                  <div class="item d-flex">
+                    <div class="img"><img src="img/course/1.jpg" alt="" class="w-100"></div>
+                    <div class="info">
+                      <!-- rate -->
+                      <div class="stars">
+                        <div class="star-rating">
+                          <span class="star active" data-rating="1">&#9733;</span>
+                          <span class="star active" data-rating="2">&#9733;</span>
+                          <span class="star active" data-rating="3">&#9733;</span>
+                          <span class="star active" data-rating="4">&#9733;</span>
+                          <span class="star" data-rating="5">&#9733;</span>
+                        </div>
+                      </div>
+                      <div class="username"><h4>Steve Martin</h4></div>
+                      <div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+                  </div>
+                  <!-- item -->
+                  <div class="item d-flex">
+                    <div class="img"><img src="img/course/1.jpg" alt="" class="w-100"></div>
+                    <div class="info">
+                      <!-- rate -->
+                      <div class="stars">
+                        <div class="star-rating">
+                          <span class="star active" data-rating="1">&#9733;</span>
+                          <span class="star active" data-rating="2">&#9733;</span>
+                          <span class="star active" data-rating="3">&#9733;</span>
+                          <span class="star active" data-rating="4">&#9733;</span>
+                          <span class="star" data-rating="5">&#9733;</span>
+                        </div>
+                      </div>
+                      <div class="username"><h4>Steve Martin</h4></div>
+                      <div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+                  </div>
+                  <!-- item -->
+                  <div class="item d-flex">
+                    <div class="img"><img src="img/course/1.jpg" alt="" class="w-100"></div>
+                    <div class="info">
+                      <!-- rate -->
+                      <div class="stars">
+                        <div class="star-rating">
+                          <span class="star active" data-rating="1">&#9733;</span>
+                          <span class="star active" data-rating="2">&#9733;</span>
+                          <span class="star active" data-rating="3">&#9733;</span>
+                          <span class="star active" data-rating="4">&#9733;</span>
+                          <span class="star" data-rating="5">&#9733;</span>
+                        </div>
+                      </div>
+                      <div class="username"><h4>Steve Martin</h4></div>
+                      <div class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -108,37 +195,210 @@
             <!-- trailer -->
             <div class="video">
               <img src="img/course/1.jpg" alt="" class="w-100">
-              <a href="#" class="play-btn" title="watch trailer">
+              <a class="play-btn" title="watch trailer" data-fancybox data-src="https://youtu.be/VtGGjIhTANM?si=Nm9fCOYk63T539eV">
                 <span><i class="fa-solid fa-play"></i></span>
               </a>
             </div>
             <div class="item price">
-              <div class="title">Price:</div>
-              <div class="num"><span>30$</span></div>
+              <div class="title"><i class="fa-solid fa-money-bills me-2"></i><span>Price:</span></div>
+              <div class="num"><span class="dollar">30 $</span><span class="eg-pound">1500 LE</span></div>
             </div>
             <div class="item duration">
-              <div class="title">Duration:</div>
+              <div class="title"><i class="fa-solid fa-clock me-2"></i><span>Duration:</span></div>
               <div class="num"><span>15 weeks</span></div>
             </div>
-            <div class="item price">
-              <div class="title">Lessons:</div>
+            <div class="item lessons">
+              <div class="title"><i class="fa-solid fa-book me-2"></i><span>Lessons:</span></div>
               <div class="num"><span>11</span></div>
             </div>
-            <div class="item price">
-              <div class="title">Students:</div>
+            <div class="item students">
+              <div class="title"><i class="fa-solid fa-users me-2"></i><span>Students:</span></div>
               <div class="num"><span>220</span></div>
             </div>
-            <div class="item price">
-              <div class="title">Language:</div>
+            <div class="item language">
+              <div class="title"><i class="fa-solid fa-globe me-2"></i><span>Language:</span></div>
               <div class="num"><span>English</span></div>
             </div>
-            <div class="item price">
-              <div class="title">Certifications:</div>
+            <div class="item certifications">
+              <div class="title"><i class="fa-solid fa-award me-2"></i><span>Certifications:</span></div>
               <div class="num"><span>Yes</span></div>
             </div>
             <form action="" class="item">
               <button type="submit" class="buy-btn mx-auto w-100">Buy Now</button>
             </form>
+          </div>
+        </div>
+        <!-- courses u may like -->
+        <div class="col-12 may-like mt-5">
+          <div class="title mb-4 text-capitalize"><h3>courses you may like</h3></div>
+          <!-- Swiper -->
+          <div class="swiper maylikeSwiper">
+            <div class="swiper-wrapper">
+              <!-- item -->
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="img">
+                    <a href="#"><img src="img/course/1.jpg" alt=""></a>
+                    <div class="buy">
+                      <a href="#">More Details</a>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <div class="prices">
+                      <div class="price">30 $</div>
+                      <div class="price">1500 LE</div>
+                    </div>
+                    <div class="category"><span><a href="#">Business</a></span></div>
+                    <div class="title"><h5><a href="#">Starting SEO as your Home Based Business</a></h5></div>
+                    <div class="rate"><span>
+                      <div class="star-rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>            
+                    </span></div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectur adipiscing elit, sed do eiusmod tempor</div>
+                    <div class="groups d-flex">
+                      <div class="lessons me-4">
+                        <span class="icon me-1"><i class="fa-solid fa-book"></i></span>
+                        <span class="num">11</span>
+                        <span class="text">Lessons</span>
+                      </div>
+                      <div class="students">
+                        <span class="icon me-1"><i class="fa-solid fa-user"></i></span>
+                        <span class="num">229</span>
+                        <span class="text">Students</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="img">
+                    <a href="#"><img src="img/course/1.jpg" alt=""></a>
+                    <div class="buy">
+                      <a href="#">More Details</a>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <div class="prices">
+                      <div class="price">30 $</div>
+                      <div class="price">1500 LE</div>
+                    </div>
+                    <div class="category"><span><a href="#">Business</a></span></div>
+                    <div class="title"><h5><a href="#">Starting SEO as your Home Based Business</a></h5></div>
+                    <div class="rate"><span>
+                      <div class="star-rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>            
+                    </span></div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectur adipiscing elit, sed do eiusmod tempor</div>
+                    <div class="groups d-flex">
+                      <div class="lessons me-4">
+                        <span class="icon me-1"><i class="fa-solid fa-book"></i></span>
+                        <span class="num">11</span>
+                        <span class="text">Lessons</span>
+                      </div>
+                      <div class="students">
+                        <span class="icon me-1"><i class="fa-solid fa-user"></i></span>
+                        <span class="num">229</span>
+                        <span class="text">Students</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="img">
+                    <a href="#"><img src="img/course/1.jpg" alt=""></a>
+                    <div class="buy">
+                      <a href="#">More Details</a>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <div class="prices">
+                      <div class="price">30 $</div>
+                      <div class="price">1500 LE</div>
+                    </div>
+                    <div class="category"><span><a href="#">Business</a></span></div>
+                    <div class="title"><h5><a href="#">Starting SEO as your Home Based Business</a></h5></div>
+                    <div class="rate"><span>
+                      <div class="star-rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>            
+                    </span></div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectur adipiscing elit, sed do eiusmod tempor</div>
+                    <div class="groups d-flex">
+                      <div class="lessons me-4">
+                        <span class="icon me-1"><i class="fa-solid fa-book"></i></span>
+                        <span class="num">11</span>
+                        <span class="text">Lessons</span>
+                      </div>
+                      <div class="students">
+                        <span class="icon me-1"><i class="fa-solid fa-user"></i></span>
+                        <span class="num">229</span>
+                        <span class="text">Students</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="img">
+                    <a href="#"><img src="img/course/1.jpg" alt=""></a>
+                    <div class="buy">
+                      <a href="#">More Details</a>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <div class="prices">
+                      <div class="price">30 $</div>
+                      <div class="price">1500 LE</div>
+                    </div>
+                    <div class="category"><span><a href="#">Business</a></span></div>
+                    <div class="title"><h5><a href="#">Starting SEO as your Home Based Business</a></h5></div>
+                    <div class="rate"><span>
+                      <div class="star-rating">
+                        <span class="star" data-rating="1">&#9733;</span>
+                        <span class="star" data-rating="2">&#9733;</span>
+                        <span class="star" data-rating="3">&#9733;</span>
+                        <span class="star" data-rating="4">&#9733;</span>
+                        <span class="star" data-rating="5">&#9733;</span>
+                      </div>            
+                    </span></div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectur adipiscing elit, sed do eiusmod tempor</div>
+                    <div class="groups d-flex">
+                      <div class="lessons me-4">
+                        <span class="icon me-1"><i class="fa-solid fa-book"></i></span>
+                        <span class="num">11</span>
+                        <span class="text">Lessons</span>
+                      </div>
+                      <div class="students">
+                        <span class="icon me-1"><i class="fa-solid fa-user"></i></span>
+                        <span class="num">229</span>
+                        <span class="text">Students</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -204,6 +464,12 @@
   <script src='js/all.min.js'></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind('[data-fancybox]', {
+      //
+    });    
+  </script>
   <script src='js/main.js'></script>
 </body>
 

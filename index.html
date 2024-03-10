@@ -8,6 +8,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='css/all.min.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
   <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
   <title>Page Title</title>
 </head>
@@ -111,7 +112,7 @@
             <!-- back img -->
             <div class="back-img">
               <img src="img/imagevideo-16.jpg" alt="" class="img-screen">
-              <a data-fancybox href="https://vimeo.com/191947042" class="play-btn">
+              <a data-fancybox data-src="https://vimeo.com/191947042" class="play-btn">
                 <div class="title">Play</div>
               </a>
             </div>
@@ -701,6 +702,12 @@
   <script src='js/all.min.js'></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind('[data-fancybox]', {
+      //
+    });    
+  </script>
   <script src='js/main.js'></script>
 </body>
 

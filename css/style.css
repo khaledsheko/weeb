@@ -7,15 +7,18 @@
   /* color: var(--black); */
 }
 :root{
-  --btn-color: #a328c9;
+  /* --btn-color: #a328c9; */
+  /* --btn-color: #3a8bb1; */
+  --btn-color: #d19254;
   --white: #fff;
   --black: #0c0c0c;
   --semi-white: #adadad;
-  --back-icon: #faf0e6;
+  --back-icon: #fcf4ec;
   --icon-link: #c9ab62;
   --sec-padding: 100px;
   --footer-back: #372e29;
   --btn-m-top: 80px;
+  --line-color: rgb(218, 218, 218);
 }
 a{
   text-decoration: none;
@@ -25,6 +28,10 @@ a{
   color: var(--white);
   margin: 0 auto;
   padding: 15px 40px;
+  /* background: rgb(250,243,92);
+  background: radial-gradient(circle, rgb(223 156 69) 0%, rgb(223 138 71) 100%); */
+  /* background: rgb(232,173,114);
+  background: linear-gradient(0deg, rgba(232,173,114,1) 0%, rgba(209,146,84,1) 100%); */
 }
 .btn-section{
   margin-top: var(--btn-m-top);
@@ -200,6 +207,7 @@ a{
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   border-radius: 50%;
+  cursor: pointer;
 }
 .knowledge .back-img .play-btn .title{
   color: var(--white);
@@ -470,7 +478,6 @@ a{
 }
 .courses .img img{
   width: 100%;
-  height: 100%;
   transition: .3s;
 }
 .courses .description{
@@ -478,7 +485,7 @@ a{
   padding-right: 30px;
   background-color: #f5f5f5;
   position: relative;
-  box-shadow: 0px 6px 11px -9px var(--black);
+  box-shadow: 0px 6px 15px -15px var(--black);
 }
 .courses .prices{
   position: absolute;
@@ -502,6 +509,9 @@ a{
 }
 .courses .category a{
   color: var(--btn-color);
+  padding: 1px 3px;
+  border-radius: 3px;
+  background-color: var(--white);
 }
 .courses .title a{
   color: var(--black);
@@ -554,7 +564,7 @@ a{
   background-color: var(--white);
   padding: 5px;
   border-radius: 5px 5px 0px 0px;
-  box-shadow: 0px 0px 3px var(--semi-white);
+  box-shadow: 0px 0px 3px var(--line-color);
   margin-top: -150px;
 }
 .course-buy .details .video{
@@ -579,15 +589,30 @@ a{
     backdrop-filter: blur(2px);
     border-radius: 15px;
     color: var(--white);
+    cursor: pointer;
+}
+.course-buy .details svg{
+  color: rgb(78, 78, 78);
+  font-size: 15px;
 }
 .course-buy .details .video .play-btn svg{
   font-size: 25px;
+  color: var(--white);
 }
 .course-buy .details .item{
   display: flex;
   justify-content: space-between;
   padding: 20px 5px;
-  border-bottom: 1px solid var(--semi-white);
+  border-bottom: 1px solid var(--line-color);
+}
+.course-buy .details .item.price .num span{
+  color: var(--white);
+  background-color: var(--icon-link);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+.course-buy .details .item.price .num .dollar{
+  margin-right: 5px;
 }
 .course-buy .details .item:last-child{
   border-bottom: none;
@@ -599,4 +624,172 @@ a{
   outline: none;
   border: none;
   border-radius: 5px;
+}
+.course-buy .course-info .tab-content{
+  padding: 0px 10px;
+}
+.course-buy .course-info .nav{
+  background-color: var(--back-icon);
+  padding: 5px 0px;
+  margin-bottom: 25px;
+}
+.course-buy .course-info .nav .nav-item{
+  width: 33.3333%;
+
+}
+.course-buy .course-info .nav .nav-item button{
+  color: var(--black);
+  width: 100%;
+}
+.course-buy .course-info .nav .nav-item button.active{
+  color: var(--white);
+  background-color: var(--btn-color);
+}
+.course-buy .course-info .swiper .swiper-slide{
+  display: flex;
+  cursor: grab;
+}
+.course-buy .course-info .swiper .swiper-slide .img{
+  min-width: 250px;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.course-buy .course-info .swiper .swiper-slide img{
+  border-radius: 5px;
+  width: 100%;
+}
+.course-buy .course-info .swiper .swiper-slide .description .name h5{
+  margin-bottom: 5px;
+}
+.course-buy .course-info .swiper .swiper-slide .description .name a{
+  color: var(--black);
+}
+.course-buy .course-info .swiper .swiper-slide .description .category{
+  margin-bottom: 15px;
+}
+.chefsSwiper{
+  padding-right: 75px;
+}
+.course-buy .course-info .reviews .item{
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.course-buy .course-info .reviews .item::after{
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--line-color);
+}
+.course-buy .course-info .reviews .item:last-child:after{
+  background: none;
+}
+.course-buy .course-info .reviews .img{
+  min-width: 100px;
+  width: 100px;
+  overflow: hidden;
+  height: 100px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.course-buy .course-info .reviews .img img{
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;  
+  padding: 2px;
+  border: 1px solid var(--line-color);
+}
+.course-buy .course-info .reviews .username{
+  font-weight:700;
+  margin: 3px 0px;
+}
+.course-buy .course-info .reviews .comment{
+  width: 70%;
+}
+/* may like course */
+.course-buy .maylikeSwiper .img{
+  position: relative;
+  height: 250px;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+}
+.course-buy .maylikeSwiper .img img{
+  width: 100%;
+  transition: .3s;
+}
+.course-buy .maylikeSwiper .description{
+  padding: 25px 15px;
+  padding-right: 30px;
+  background-color: #f5f5f5;
+  position: relative;
+  box-shadow: 0px 6px 15px -15px var(--black);
+}
+.course-buy .maylikeSwiper .prices{
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-25px, -50%);
+  display: flex;
+}
+.course-buy .maylikeSwiper .price{
+  padding: 5px 10px;
+  background-color: var(--btn-color);
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 15px;
+}
+.course-buy .maylikeSwiper .price:last-child{
+  margin-left: 10px;
+}
+.course-buy .maylikeSwiper .category{
+  margin-bottom: 10px;
+}
+.course-buy .maylikeSwiper .category a{
+  color: var(--btn-color);
+  padding: 1px 3px;
+  border-radius: 3px;
+  background-color: var(--white);
+}
+.course-buy .maylikeSwiper .title a{
+  color: var(--black);
+}
+.course-buy .maylikeSwiper .title,
+.course-buy .maylikeSwiper .rate,
+.course-buy .maylikeSwiper .desc
+{
+  margin-bottom: 5px;
+}
+.course-buy .maylikeSwiper .groups{
+  padding-top: 15px;
+  color: #5c5b5b;
+}
+.header-page{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--back-icon);
+}
+.course-buy .maylikeSwiper .img .buy{
+  position: absolute;
+  top: 25px;
+  transition: .3s;
+  opacity: 0;
+  right: 25px;
+}
+.course-buy .maylikeSwiper .img .buy a{
+  padding: 5px 15px;
+  font-size: 14px;
+  background-color: var(--btn-color);
+  color: var(--white);
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px -1px var(--black);
+}
+.course-buy .may-like{
+  border-top: 1px solid var(--line-color);
+  padding-top: 25px;
 }

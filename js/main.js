@@ -29,8 +29,28 @@ var swiper = new Swiper(".blogsSwiper", {
     },
   },
 });
+var swiper = new Swiper(".chefsSwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+var swiper = new Swiper(".maylikeSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+});
+
 $(document).ready(function() {
   $('.courses .item').hover(
+    function() {
+      $(this).find('img').css('transform', 'scale(1.1)');
+      $(this).find('.buy').css('opacity', '1');
+    },
+    function() {
+      $(this).find('img').css('transform', '');
+      $(this).find('.buy').css('opacity', '');
+    },
+  );
+  $('.course-buy .maylikeSwiper .item').hover(
     function() {
       $(this).find('img').css('transform', 'scale(1.1)');
       $(this).find('.buy').css('opacity', '1');
