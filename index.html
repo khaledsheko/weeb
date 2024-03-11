@@ -542,10 +542,11 @@
       </div>
     </div>
   </div>
+  <!-- modals -->
   <div class="modals">
     <div class="modal fade mt-5" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
       tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -575,12 +576,6 @@
                 tabindex="0">
                 <form class="container-fluid login-form">
                   <div class="row">
-                    <!-- social -->
-                    <div class="social text-center mb-5">
-                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                      <a href="#"><i class="fa-brands fa-google"></i></a>
-                    </div>
                     <div class="col-8 mx-auto">
                       <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required/>
@@ -594,7 +589,7 @@
                       </div>
                     </div>
                     <div class="col-8 mx-auto mt-3">
-                      <div class="form-check text-center">
+                      <div class="form-check text-left">
                         <input class="form-check-input" type="checkbox" value="" id="loginCheck" />
                         <label class="form-check-label" for="loginCheck">
                           Remember me
@@ -610,6 +605,12 @@
                       <a class="mt-3 d-block link-color" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"
                         href="#">forget password?</a>
                     </div>
+                    <!-- social -->
+                    <div class="social text-center mt-4">
+                      <h6 class="mb-4">Login With</h6>
+                      <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#" class="google"><i class="fa-brands fa-google"></i></a>
+                    </div>
                   </div>
                 </form>
               </div>
@@ -617,42 +618,44 @@
               <div class="tab-pane" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab" tabindex="0">
                 <form class="container-fluid signup-form">
                   <div class="row">
-                    <div class="social text-center mb-5">
-                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                      <a href="#"><i class="fa-brands fa-google"></i></a>
-                    </div>
-                    <div class="col-md-6">
+                    
+                    <div class="col-md-8 mx-auto">
                       <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="floatingInputName" placeholder="name@example.com" required/>
                         <label for="floatingInputName">Name</label>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-8 mx-auto">
                       <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="floatingInputEmail"
                           placeholder="name@example.com" required/>
                         <label for="floatingInputEmail">Email</label>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="form-floating">
+                    <div class="col-md-8 mx-auto">
+                      <div class="form-floating mb-3">
                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required/>
                         <label for="floatingPassword">Password</label>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-8 mx-auto">
                       <div class="form-floating">
                         <input type="password" class="form-control" id="floatingPasswordConf" placeholder="Password" required/>
                         <label for="floatingPasswordConf">Confirm Password</label>
                       </div>
                     </div>
-                    <div class="col-12 mx-auto text-center mt-3">
+                    <div class="col-8 mx-auto text-center mt-3">
                       <div class="form-floating">
                         <button class="btn-sign w-100" type="submit">
                           Sign Up
                         </button>
                       </div>
+                    </div>
+                    <!-- social -->
+                    <div class="social text-center mt-3">
+                      <h6 class="mb-4">Sign Up With</h6>
+                      <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#" class="google"><i class="fa-brands fa-google"></i></a>
                     </div>
                   </div>
                 </form>
