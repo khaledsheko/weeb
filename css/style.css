@@ -414,6 +414,31 @@ a{
 .modals .modal-header{
   border-bottom: none;
 }
+.modals .remember-sec label,
+.modals .remember-sec input{
+  cursor: pointer;
+}
+.modals .social .title{
+  position: relative;
+}
+.modals .social .title::after{
+  content: '';
+  position: absolute;
+  width: 36%;
+  height: 1px;
+  background-color: var(--line-color);
+  top: 50%;
+  left: 0;
+}
+.modals .social .title::before{
+  content: '';
+  position: absolute;
+  width: 36%;
+  height: 1px;
+  background-color: var(--line-color);
+  top: 50%;
+  right: 0;
+}
 .modals .social a{
   padding: 10px 20px;
   background-color: var(--footer-back);
