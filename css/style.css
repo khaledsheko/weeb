@@ -20,6 +20,7 @@
   --btn-m-top: 80px;
   --line-color: rgb(218, 218, 218);
   --color-1:rgb(78, 78, 78);
+  --star-active: #f57005;
 }
 a{
   text-decoration: none;
@@ -615,337 +616,179 @@ a{
 .star {
   color: #999;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 0px;
   transition: .3s;
+  margin-right: 0;
 }
 .star.active {
-  color: #ffcc00;
+  color: var(--star-active);
 }
-/* single course page */
-.course-buy .details{
-  background-color: var(--white);
-  padding: 5px;
-  border-radius: 5px 5px 0px 0px;
-  box-shadow: 0px 0px 3px var(--line-color);
-  margin-top: -150px;
-}
-.course-buy .details .video{
-  position: relative;
-  height: 220px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.course-buy .details .video img{
-  width: 100%;
-  height: 100%;
-}
-.course-buy .details .video .play-btn{
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 15px 20px;
-    border: 1px solid var(--semi-white);
-    background: rgba(0, 0, 0, .3);
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-    border-radius: 15px;
-    color: var(--white);
-    cursor: pointer;
-}
-.course-buy .details svg{
-  color: var(--color-1);
-  font-size: 15px;
-}
-.course-buy .details .video .play-btn svg{
-  font-size: 25px;
-  color: var(--white);
-}
-.course-buy .details .item{
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 5px;
-  border-bottom: 1px solid var(--line-color);
-}
-.course-buy .details .item.price .num span{
-  color: var(--white);
-  background-color: var(--icon-link);
-  padding: 1px 5px;
-  border-radius: 3px;
-}
-.course-buy .details .item.price .num .dollar{
-  margin-right: 5px;
-}
-.course-buy .details .item:last-child{
-  border-bottom: none;
-}
-.course-buy .details .item .buy-btn{
-  padding: 15px 0px;
-  background-color: var(--btn-color);
-  color: var(--white);
-  outline: none;
-  border: none;
-  border-radius: 5px;
-}
-.course-buy .course-info .tab-content{
-  padding: 0px 10px;
-}
-.course-buy .course-info .nav{
-  background-color: var(--back-icon);
-  padding: 5px 0px;
-  margin-bottom: 25px;
-}
-.course-buy .course-info .nav .nav-item{
-  width: 33.3333%;
-
-}
-.course-buy .course-info .nav .nav-item button{
-  color: var(--black);
-  width: 100%;
-}
-.course-buy .course-info .nav .nav-item button.active{
-  color: var(--white);
-  background-color: var(--btn-color);
-}
-.course-buy .course-info .swiper .swiper-slide{
-  display: flex;
-  cursor: grab;
-}
-.course-buy .course-info .swiper .swiper-slide .img{
-  min-width: 250px;
-  width: 250px;
-  height: 200px;
-  overflow: hidden;
-  margin-right: 10px;
-}
-.course-buy .course-info .swiper .swiper-slide img{
-  border-radius: 5px;
-  width: 100%;
-}
-.course-buy .course-info .swiper .swiper-slide .description .name h5{
-  margin-bottom: 5px;
-}
-.course-buy .course-info .swiper .swiper-slide .description .name a{
-  color: var(--black);
-}
-.course-buy .course-info .swiper .swiper-slide .description .category{
-  margin-bottom: 15px;
-}
-.chefsSwiper{
-  padding-right: 75px;
-}
-.course-buy .course-info .reviews .item{
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  position: relative;
-}
-.course-buy .course-info .reviews .item::after{
-  content: '';
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: var(--line-color);
-}
-.course-buy .course-info .reviews .item:last-child:after{
-  background: none;
-}
-.course-buy .course-info .reviews .img{
-  min-width: 100px;
-  width: 100px;
-  overflow: hidden;
-  height: 100px;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-.course-buy .course-info .reviews .img img{
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;  
-  padding: 2px;
-  border: 1px solid var(--line-color);
-}
-.course-buy .course-info .reviews .username{
-  font-weight:700;
-  margin: 3px 0px;
-}
-.course-buy .course-info .reviews .comment{
-  width: 70%;
-}
-/* may like course */
-.course-buy .maylikeSwiper .img{
-  position: relative;
-  height: 250px;
-  border-radius: 5px 5px 0px 0px;
-  overflow: hidden;
-}
-.course-buy .maylikeSwiper .img img{
-  width: 100%;
-  transition: .3s;
-}
-.course-buy .maylikeSwiper .description{
-  padding: 25px 15px;
-  padding-right: 30px;
-  background-color: #f5f5f5;
-  position: relative;
-  box-shadow: 0px 6px 15px -15px var(--black);
-}
-.course-buy .maylikeSwiper .prices{
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-25px, -50%);
-  display: flex;
-}
-.course-buy .maylikeSwiper .price{
-  padding: 5px 10px;
-  background-color: var(--btn-color);
-  color: var(--white);
-  border-radius: 5px;
-  font-size: 15px;
-}
-.course-buy .maylikeSwiper .price:last-child{
-  margin-left: 10px;
-}
-.course-buy .maylikeSwiper .category{
-  margin-bottom: 10px;
-}
-.course-buy .maylikeSwiper .category a{
-  color: var(--btn-color);
-  padding: 1px 3px;
-  border-radius: 3px;
-  background-color: var(--white);
-  font-size: 15px;
-}
-.course-buy .maylikeSwiper .title a{
-  color: var(--black);
-}
-.course-buy .maylikeSwiper .title,
-.course-buy .maylikeSwiper .rate,
-.course-buy .maylikeSwiper .desc
-{
-  margin-bottom: 5px;
-}
-.course-buy .maylikeSwiper .groups{
-  padding-top: 15px;
-  color: #5c5b5b;
-  font-size: 14px;
-}
-.header-page{
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: var(--back-icon);
-}
-.course-buy .maylikeSwiper .img .buy{
-  position: absolute;
-  top: 25px;
-  transition: .3s;
-  opacity: 0;
-  right: 25px;
-}
-.course-buy .maylikeSwiper .img .buy a{
-  padding: 5px 15px;
-  font-size: 14px;
-  background-color: var(--btn-color);
-  color: var(--white);
-  border-radius: 4px;
-  box-shadow: 0px 1px 4px -1px var(--black);
-}
-.course-buy .may-like{
-  border-top: 1px solid var(--line-color);
-  padding-top: 25px;
-}
-/* video page */
-.video-page{
+.course-subscribe{
   padding: 50px 0;
 }
-.video-page .video-section .video-frame{
-  padding-bottom: 25px;
-  position: relative;
-}
-.video-page .video-section .video-frame::after{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  width: 100%;
-  background-color: var(--line-color);
-}
-.video-page .video-section .video-frame iframe{
-  width: 100%;
+.course-subscribe .video-section .video-frame iframe{
+  border-radius: 5px;
   height: 500px;
-  background-color: var(--black);
 }
-.video-page .description{
-  padding-top: 25px;
+.course-subscribe .video-section .description .hint{
+  margin-top: 5px;
 }
-.video-page .nav-pills .nav-item{
-  /* width: 33.3333%; */
-  width: 50%;
-  background: var(--back-icon);
+.course-subscribe .video-section .description .hint .course-type a{
+  background-color: var(--color-1);
+  color: var(--white);
+  font-size: 14px;
+  padding: 2px 4px;
+  border-radius: 5px;
 }
-.video-page .nav-pills .nav-link{
+.course-subscribe .video-section .description .hint .star-rating{
+  cursor: default;
+}
+.course-subscribe .video-section .description .hint .star-rating .star{
+  color: var(--star-active);
+  font-size: 16px;
+  margin-right: 0;
+  font-weight: 600;
+}
+.course-subscribe .video-section .description .hint .star-rating .reviews-num{
+  font-size: 16px;
+}
+.course-subscribe .video-section .description .title{
+  margin-top: 10px;
+}
+.course-subscribe .nav{
+  background-color: var(--back-icon);
+  padding: 10px;
+  border-radius: 10px;
+}
+.course-subscribe .nav .nav-item{
+  margin-right: 15px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+.course-subscribe .nav .nav-link{
   width: 100%;
-  border-radius: 0;
+  transition: none;
   color: var(--color-1);
   font-weight: 600;
 }
-.video-page .nav-pills .nav-link.active{
-  background-color: var(--btn-color);
-  transition: .1s;
+.course-subscribe .nav .nav-link.active{
   color: var(--white);
+  background: var(--btn-color);
 }
-.video-page .comment-main .title{
-  margin-top: 15px;
+.course-subscribe .tab-content .videos-list{
+  margin-top: 25px;
 }
-.video-page .comment-main .comment-item{
+.course-subscribe .tab-content .videos-list .video-item{
+  color: var(--color-1);
   display: flex;
-  margin-top: 15px;
-  position: relative;
-  padding: 25px 0;
-  border-bottom: 1px solid var(--line-color);
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
-.video-page .comment-main .comment-item:last-child{
-  border-bottom: none;
-}
-.video-page .comment-main .comment-item .img{
-  width: 200px;
-  height: 100px;
-  margin-right: 15px;
-}
-.video-page .comment-main .comment-item .img img{
+.course-subscribe .tab-content .videos-list .video-item.active{
+  background: var(--back-icon);
+  padding: 5px 0;
   border-radius: 5px;
 }
-.video-page .comment-main .comment-item{
+.course-subscribe .tab-content .videos-list .video-item.active .icon svg{
+  color: var(--btn-color);
+}
+.course-subscribe .tab-content .videos-list .video-item .title{
+  font-weight: 500;
+  font-size: 16px;
+}
+.course-subscribe .tab-content .videos-list .video-item .preview{
+  font-weight: 600;
+  font-size: 14px;
+}
+.course-subscribe .tab-content .videos-list .video-item .preview .play a{
+  background-color: rgb(255 195 147);
+  color: rgb(51 51 51);
+  margin-left: 5px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.course-subscribe .tab-content .videos-list .video-item .preview .locked a{
+  background-color: none;
+  color: var(--color-1);
+  margin-left: 5px;
+}
+.course-subscribe .tab-content .review-list .review-item,
+.course-subscribe .tab-content .chef-list .chef-item{
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line-color);
+}
+.course-subscribe .tab-content .chef-list .chef-item:last-child{
+  border-bottom: none;
+}
+.course-subscribe .tab-content .review-list .review-item .img-profile,
+.course-subscribe .tab-content .chef-list .chef-item .img-profile{
+  width: 130px;
+  height: 115px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.course-subscribe .tab-content .review-list .review-item .img-profile img,
+.course-subscribe .tab-content .chef-list .chef-item .img-profile img{
+  height: 100%;
+}
+.course-subscribe .tab-content .review-list .star-group{
+  margin: 3px 0;
+}
+.course-subscribe .tab-content .review-list .star-group .star{
+  margin-right: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--star-active);
+}
+.course-subscribe .tab-content .review-list .comment,
+.course-subscribe .tab-content .chef-list .comment{
+  text-align: justify;
+  width: 80%;
   color: var(--black);
 }
-.video-page .comment-main .comment-item .date{
-  color: var(--color-1);
-  font-size: 15px;
+.course-subscribe .tab-content .add-review{
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: var(--back-icon);
+  margin-top: 20px;
 }
-.video-page .comment-main .comment-item .comment-words{
-  width: 75%;
+.course-subscribe .tab-content .description .hint{
   text-align: justify;
+  width: 95%;
+  color: var(--black);
+  margin-bottom: 15px;
 }
-.video-page .insert-comment{
-  padding: 5px;
+.course-subscribe .tab-content .description .item ul li{
+  list-style-type: square;
 }
-.video-page .insert-comment form{
+.course-subscribe .tab-content .add-review .title{
+  margin-right: 15px;
+  margin-left: 5px;
+}
+.course-subscribe .tab-content .add-review .star-rating .star{
+  margin-right: 0;
+  font-size: 25px;
+}
+.course-subscribe .tab-content .add-review .choose{
+  display: flex;
+  align-items: center;
+}
+.course-subscribe .tab-content .add-review form{
   text-align: right;
 }
-.video-page .insert-comment textarea{
+.course-subscribe .tab-content .add-review textarea{
   outline: none;
   height: 150px;
   resize: none;
 }
-.video-page .insert-comment textarea:focus{
+.course-subscribe .tab-content .add-review textarea:focus{
   border-color: var(--semi-white);
   box-shadow: none;
 }
- .insert-comment .submit{
+.course-subscribe .tab-content .add-review .submit{
   margin-top: 15px;
   padding: 5px 20px;
   background: var(--btn-color);
@@ -955,68 +798,109 @@ a{
   outline: none;
   margin-right: auto;
 }
-.video-page .videos-list{
-  background: #f9f9f9;
+.course-subscribe .tab-content .chef-list .chef-item .desc .username{
+  font-weight: 600;
 }
-.video-page .videos-list .title-section{
-  /* background: #d19254; */
-  background-color: var(--color-1);
-  color: white;
-  padding: 20px 0;
-  margin-bottom: 0;
-}
-.video-page .videos-list .videos-group{
-  overflow-y: scroll;
-  max-height: 700px;
-  scrollbar-width:thin;
-  scrollbar-color:  var(--line-color) #f9f9f9;
-  padding-left: 3px;
-}
-.video-page .item{
+.course-subscribe .tab-content .chef-list .chef-item .desc .job-title{
+  font-size: 14px;
   color: var(--color-1);
+  margin-bottom: 5px;
 }
-.video-page .video-item{
+.course-subscribe .tab-content{
+  padding: 25px 0;
+  border-radius: 10px;
+  border: 1px solid var(--line-color);
+}
+
+
+
+
+.course-subscribe .details{
+  background-color: var(--white);
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0px 0px 3px var(--line-color);
+  margin-bottom: 25px;
+}
+.course-subscribe .details .main-title {
+  margin: 0 auto;
+  /* background-color: var(--back-icon); */
+  color: var(--color-1);
+  background-color: var(--back-icon);
+  border-radius: 5px 5px 0px 0px;
+}
+.course-subscribe .details .main-title .title{
+  margin: 0 auto;
+}
+.course-subscribe .details .item:first-child{
+  border-bottom: none;
+}
+.course-subscribe .details .item{
   display: flex;
-  flex-direction: row;
-  margin: 15px 0;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-bottom: 1px solid var(--line-color);
 }
-.video-page .video-item.active{
-  /* background-color: #fff0df; */
-  background-color: var(--line-color);
+.course-subscribe .details .item svg{
+  color: var(--btn-color);
 }
-.video-page .video-item .video-img{
-  position: relative;
-  overflow: hidden;
-  width: 90px;
-  /* height: 130px; */
+.course-subscribe .details .item.price .num span{
+  color: var(--color-1);
+  background-color: var(--back-icon);
+  font-weight: 500;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+.course-subscribe .details .item.price .num .dollar{
   margin-right: 5px;
 }
-.video-page .video-item .video-img img{
+.course-subscribe .details .item:last-child{
+  border-bottom: none;
+}
+.course-subscribe .details .item .buy-btn{
+  padding: 15px 0px;
+  background-color: var(--btn-color);
+  color: var(--white);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.course-subscribe .latest-course .item-course{
+  display: flex;
+  padding: 15px 10px;
+  border-bottom: 1px solid var(--line-color);
+}
+.course-subscribe .latest-course .item-course:last-child{
+  border-bottom: none;
+}
+.course-subscribe .latest-course .item-course .img{
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.course-subscribe .latest-course .item-course .img img{
+  height: 100%;
+  border-radius: 5px;
   transition: .3s;
 }
-.video-page .video-item .video-img .play-btn{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 20px;
-  border: 1px solid var(--btn-color);
-  background: rgba(0, 0, 0, .5);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  border-radius: 5px;
-  cursor: pointer;
-}
-.video-page .video-item .video-img .play-btn svg{
-  font-size: 30px;
-  color: var(--white);
-}
-.video-page .video-item .desc .title a{
+.course-subscribe .latest-course .item-course .stars{
   font-size: 15px;
-  font-weight: 600;
-  color: var(--color-1);
+  margin-right: 0;
 }
-.video-page .video-item .desc .time{
+.course-subscribe .latest-course .item-course .price{
   font-size: 14px;
-  color: #5c5b5b;
+}
+.course-subscribe .latest-course .item-course .desc .title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+.course-subscribe .latest-course .item-course .desc .title a{
+  color: var(--black);
+}
+.course-subscribe .latest-course .item-course .desc .title a:hover{
+  color: var(--btn-color);
+  transition: .2s;
 }

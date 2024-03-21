@@ -60,6 +60,14 @@ $(document).ready(function() {
       $(this).find('.buy').css('opacity', '');
     },
   );
+  $('.course-subscribe .latest-course .item-course').hover(
+    function() {
+      $(this).find('img').css('transform', 'scale(1.1)');
+    },
+    function() {
+      $(this).find('img').css('transform', '');
+    },
+  );
 });
 
 let courseItem = $('.courses .row');
@@ -129,63 +137,4 @@ $(document).ready(function () {
   let myElemen = $('.video-page .comment-main .comment-item').length;
   let myElement = $('.video-page .comment-main .title')
   myElement.text('Comments (' + myElemen + '):')
-})
-
-$(document).ready(function () {
-  let videoList = $('.video-page .videos-list .videos-group')
-  
-  for (let i = 2; i < 20; i++) {
-    let videoItem = `
-                  <!-- item -->
-                  <a href="#" class="item">
-                    <div class="video-item">
-                      <div class="video-img">
-                        <img src="img/course/1.jpg" alt="" class="w-100">
-                      </div>
-                      <div class="desc">
-                        <div class="title">Excepteur sint occaecat - ${i}</div>
-                        <div class="time mt-2"><i class="fa-solid fa-tv me-2"></i><span>11:29 min</span></div>
-                      </div>
-                    </div>
-                  </a>`
-    videoList.append(videoItem)    
-  }
-})
-
-// video page loop test
-// $(document).ready(function(){
-
-//   let targetElement = $(".video-page #video-row");
-//   for (i = 2; i < 10; i++) {
-//     let videoItem = `<!-- item -->
-//     <div class="col-xxl-4 video-item mb-4">
-//       <div class="video-img">
-//         <a href="#">
-//           <img src="img/course/1.jpg" alt="" class="w-100">
-//           <div class="play-btn">
-//             <i class="fa-solid fa-play"></i>
-//           </div>
-//         </a>
-//       </div>
-//       <div class="desc">
-//         <div class="title mt-1">
-//           <span>lesson name</span>
-//           <span> - ${i}</span>
-//         </div>
-//       </div>
-//     </div>`
-
-//     targetElement.append(videoItem);
-//   }
-// });
-// // video page hover item
-// $(document).ready(function() {
-//   $('.video-page .video-item').hover(
-//     function() {
-//       $(this).find('img').css('transform', 'scale(1.1)');
-//     },
-//     function() {
-//       $(this).find('img').css('transform', '');
-//     },
-//   );
-// });
+});
