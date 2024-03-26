@@ -72,239 +72,222 @@
   </div>
   <div class="header-page text-center">
     <div class="title">
-      <h1>CoursePage</h1>
+      <h1>Dashboard</h1>
     </div>
   </div>
-  <div class="course-subscribe">
+  <div class="user-dashboard">
     <div class="container">
       <div class="row">
-        <!-- left -->
-        <div class="col-8">
-          <!-- video frame -->
-          <div class="video-section">
-            <!-- video -->
-            <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed/nIUTsuHD4-4" frameborder="0" class="w-100"></iframe>
-            </div>
-            <!-- info -->
-            <div class="description">
-              <h4 class="title">The Special HTML & CSS Bootcamp Edition</h4>
-            </div>
-          </div>
+        <div class="d-flex align-items-start nav-content-group">
           <!-- tabs -->
-          <ul class="nav nav-pills mb-3 mt-4" id="pills-tab" role="tablist">
-            <!-- overview -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-overview-tab" data-bs-toggle="pill"
-                data-bs-target="#pills-overview" type="button" role="tab" aria-controls="pills-overview"
-                aria-selected="true">Overview</button>
-            </li>
-            <!-- videos -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-videos-tab" data-bs-toggle="pill" data-bs-target="#pills-videos"
-                type="button" role="tab" aria-controls="pills-videos" aria-selected="false">Videos</button>
-            </li>
-          </ul>
+          <div class="col-3 nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link" id="v-pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dashboard" type="button" role="tab" aria-controls="v-pills-dashboard" aria-selected="true"><span>Dashboard</span></button>
+            <button class="nav-link" id="v-pills-orders-tab" data-bs-toggle="pill" data-bs-target="#v-pills-orders" type="button" role="tab" aria-controls="v-pills-orders" aria-selected="false"><span>Orders</span></button>
+            <button class="nav-link active" id="v-pills-subscriptions-tab" data-bs-toggle="pill" data-bs-target="#v-pills-subscriptions" type="button" role="tab" aria-controls="v-pills-subscriptions" aria-selected="false"><span>Subscriptions</span></button>
+            <button class="nav-link" id="v-pills-wishlists-tab" data-bs-toggle="pill" data-bs-target="#v-pills-wishlists" type="button" role="tab" aria-controls="v-pills-wishlists" aria-selected="false"><span>Wishlists</span></button>
+            <button class="nav-link" id="v-pills-coupons-tab" data-bs-toggle="pill" data-bs-target="#v-pills-coupons" type="button" role="tab" aria-controls="v-pills-coupons" aria-selected="false"><span>Coupons</span></button>
+            <button class="nav-link" id="v-pills-addresses-tab" data-bs-toggle="pill" data-bs-target="#v-pills-addresses" type="button" role="tab" aria-controls="v-pills-addresses" aria-selected="false"><span>Addresses</span></button>
+            <button class="nav-link" id="v-pills-payment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-payment" type="button" role="tab" aria-controls="v-pills-payment" aria-selected="false"><span>Payment methods</span></button>
+            <button class="nav-link" id="v-pills-details-tab" data-bs-toggle="pill" data-bs-target="#v-pills-details" type="button" role="tab" aria-controls="v-pills-details" aria-selected="false"><span>Account details</span></button>
+            <button class="nav-link" id="v-pills-logout-tab" data-bs-toggle="pill" data-bs-target="#v-pills-logout" type="button" role="tab" aria-controls="v-pills-logout" aria-selected="false"><span>Log out</span></button>
+          </div>
           <!-- content -->
-          <div class="tab-content px-2" id="pills-tabContent">
+          <div class="col-9 tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab" tabindex="0">...</div>
 
+            <!-- order section -->
+            <div class="tab-pane fade orders" id="v-pills-orders" role="tabpanel" aria-labelledby="v-pills-orders-tab" tabindex="0">
+              <div class="dessert swiper ordersSwiper">
+                <div class="swiper-wrapper">
+                  
+                  <!-- item -->
+                  <div class="swiper-slide">
+                    <a href="#" class="item">
+                      <!-- icon cart -->
+                      <div class="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" fill="none" class="injected-svg svg_inject">
+                          <path d="M2.20104 4.7352C2.20968 4.65839 2.27464 4.60033 2.35194 4.60033H13.2785C13.3558 4.60033 13.4208 4.65839 13.4294 4.7352L14.7942 16.8665C14.8043 16.9565 14.7339 17.0353 14.6433 17.0353H0.987175C0.896585 17.0353 0.826147 16.9565 0.836274 16.8665L2.20104 4.7352Z" stroke="#08070B" stroke-width="1.06296"></path>
+                          <path d="M5.53613 6.17791V3.28852C5.53613 2.03054 6.55593 1.01074 7.81391 1.01074C9.07189 1.01074 10.0917 2.03054 10.0917 3.28852V6.17791" stroke="#08070B" stroke-width="1.06296"></path>
+                        </svg>
+                      </div>
+                      <div class="img"><img src="img/item.jpg" alt="" class=""></div>
+                      <div class="title"><span>Callebaut 811 54.5% Dark Chocolate Callets 2.5kg</span></div>
+                      <div class="price"><span>$69.00</span></div>
+                    </a>
+                  </div>
 
-            <!-- content overview -->
-            <div class="tab-pane show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab"
-              tabindex="0">
-              <div class="description">
-                <div class="hint">
-                  Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna hendrerit sagittis.
-                  Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit ipsum. Sed eget
-                  auctor metus, ac dapibus dolor. Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh.
-                  Himenaeos. Vestibulum sollicitudin varius mauris non dignissim. Sed quis iaculis est. Nulla quam
-                  neque, interdum vitae fermentum lacinia, interdum eu magna. Mauris non posuere tellus. Donec quis
-                  euismod tellus. Nam vel lacus eu nisl bibendum accumsan vitae vitae nibh. Nam nec eros id magna
-                  hendrerit sagittis. Nullam sed mi non odio feugiat volutpat sit amet nec elit. Maecenas id hendrerit
-                  ipsum. Sed eget auctor metus, ac dapibus dolo
+                  <!-- item -->
+                  <div class="swiper-slide">
+                    <a href="#" class="item">
+                      <!-- icon cart -->
+                      <div class="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" fill="none" class="injected-svg svg_inject">
+                          <path d="M2.20104 4.7352C2.20968 4.65839 2.27464 4.60033 2.35194 4.60033H13.2785C13.3558 4.60033 13.4208 4.65839 13.4294 4.7352L14.7942 16.8665C14.8043 16.9565 14.7339 17.0353 14.6433 17.0353H0.987175C0.896585 17.0353 0.826147 16.9565 0.836274 16.8665L2.20104 4.7352Z" stroke="#08070B" stroke-width="1.06296"></path>
+                          <path d="M5.53613 6.17791V3.28852C5.53613 2.03054 6.55593 1.01074 7.81391 1.01074C9.07189 1.01074 10.0917 2.03054 10.0917 3.28852V6.17791" stroke="#08070B" stroke-width="1.06296"></path>
+                        </svg>
+                      </i></div>
+                      <div class="img"><img src="img/item.jpg" alt="" class=""></div>
+                      <div class="title"><span>Callebaut 811 54.5% Dark Chocolate Callets 2.5kg</span></div>
+                      <div class="price"><span>$69.00</span></div>
+                    </a>
+                  </div>
+
+                  <!-- item -->
+                  <div class="swiper-slide">
+                    <a href="#" class="item">
+                      <!-- icon cart -->
+                      <div class="cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" fill="none" class="injected-svg svg_inject">
+                          <path d="M2.20104 4.7352C2.20968 4.65839 2.27464 4.60033 2.35194 4.60033H13.2785C13.3558 4.60033 13.4208 4.65839 13.4294 4.7352L14.7942 16.8665C14.8043 16.9565 14.7339 17.0353 14.6433 17.0353H0.987175C0.896585 17.0353 0.826147 16.9565 0.836274 16.8665L2.20104 4.7352Z" stroke="#08070B" stroke-width="1.06296"></path>
+                          <path d="M5.53613 6.17791V3.28852C5.53613 2.03054 6.55593 1.01074 7.81391 1.01074C9.07189 1.01074 10.0917 2.03054 10.0917 3.28852V6.17791" stroke="#08070B" stroke-width="1.06296"></path>
+                        </svg>
+                      </i></div>
+                      <div class="img"><img src="img/item.jpg" alt="" class=""></div>
+                      <div class="title"><span>Callebaut 811 54.5% Dark Chocolate Callets 2.5kg</span></div>
+                      <div class="price"><span>$69.00</span></div>
+                    </a>
+                  </div>
                 </div>
-                <div class="item mt-2">
-                  <h5 class="title">Tools :</h5>
-                  <ul>
-                    <li>knife</li>
-                    <li>cake</li>
-                    <li>hahaha</li>
-                  </ul>
+                
+                <!-- buttons -->
+                <div class="buttons-swiper">
+                  <div class="swiper-button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                      <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+                      <path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1"/>
+                    </svg>
+                  </div>
                 </div>
+
               </div>
             </div>
 
+            <!-- subscriptions -->
+            <div class="tab-pane fade subscriptions show active" id="v-pills-subscriptions" role="tabpanel" aria-labelledby="v-pills-subscriptions-tab" tabindex="0">
+              
+            </div>
+            
+            <div class="tab-pane fade" id="v-pills-wishlists" role="tabpanel" aria-labelledby="v-pills-wishlists-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="v-pills-coupons" role="tabpanel" aria-labelledby="v-pills-coupons-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="v-pills-addresses" role="tabpanel" aria-labelledby="v-pills-addresses-tab" tabindex="0"></div>
+            <div class="tab-pane fade" id="v-pills-payment" role="tabpanel" aria-labelledby="v-pills-payment-tab" tabindex="0">...</div>
 
-            <!-- content videos -->
-            <div class="tab-pane" id="pills-videos" role="tabpanel" aria-labelledby="pills-videos-tab" tabindex="0">
-              <!-- groups -->
-              <div class="videos-list">
-                <!-- item -->
-                <div class="video-item">
-                  <div class="desc me-5">
-                    <!-- icon -->
-                    <span class="icon me-2"><i class="fa-solid fa-circle-play"></i></span>
-                    <!-- title -->
-                    <span class="title">Introduction of Editing</span>
+            <!-- details section -->
+            <div class="tab-pane fade account-details" id="v-pills-details" role="tabpanel" aria-labelledby="v-pills-details-tab" tabindex="0">
+              <div class="container">
+                <!-- Account Details -->
+                <div class="title-section"><h3>Account Details</h3></div>
+
+                <form action="">
+                  <div class="row">
+                    <!-- First Name -->
+                    <div class="col-6">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                        <label for="floatingInput">First Name</label>
+                      </div>
+                    </div>
+                    <!-- Last Name -->
+                    <div class="col-6">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Last Name">
+                        <label for="floatingInput">Last Name</label>
+                      </div>
+                    </div>
+                    <!-- Display Name -->
+                    <div class="col-6">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Display Name">
+                        <label for="floatingInput">Display Name</label>
+                      </div>
+                    </div>
+                    <!-- Email address -->
+                    <div class="col-6">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Email address" required>
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                    </div>
+                    
+                    <!-- password change -->
+                    <div class="pw-change col-6 mt-4">
+                      <!-- title -->
+                      <div class="title">Password change</div>
+                      <!-- Current Password -->
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control col-6" id="floatingInput" placeholder="Current Password" required>
+                        <label for="floatingInput">Current Password</label>
+                      </div>
+                      <!-- New Password -->
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control col-6" id="floatingInput" placeholder="New Password" required>
+                        <label for="floatingInput">New Password</label>
+                      </div>
+                      <!-- Confirm New Password -->
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control col-6" id="floatingInput" placeholder="Confirm New Password" required>
+                        <label for="floatingInput">Confirm New Password</label>
+                      </div>
+                    </div>
+
+                    <!-- Online classes personalisation -->
+                    <div class="classes col-6 mt-4">
+                      <!-- title -->
+                      <div class="title">Online classes personalisation</div>
+                      <!-- New Password -->
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingInput" placeholder="New Password" required>
+                        <label for="floatingInput">New Password</label>
+                      </div>
+                      <!-- Confirm New Password -->
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingInput" placeholder="Confirm New Password" required>
+                        <label for="floatingInput">Confirm New Password</label>
+                      </div>
+                    </div>
+                    
+                    <!-- submit button -->
+                    <div class="col-12">
+                      <button type="submit" class="submit-button rounded-pill">Save Changes</button>
+                    </div>
+
                   </div>
-                  <div class="preview">
-                    <!-- time -->
-                    <span class="duration">10:29min</span>
-                    <span class="play"><a href="#">Preview</a></span>
-                  </div>
-                </div>
-                <!-- item -->
-                <div class="video-item">
-                  <div class="desc me-5">
-                    <!-- icon -->
-                    <span class="icon me-2"><i class="fa-solid fa-circle-play"></i></span>
-                    <!-- title -->
-                    <span class="title">Introduction of Editing</span>
-                  </div>
-                  <div class="preview">
-                    <!-- time -->
-                    <span class="duration">10:29min</span>
-                    <span class="play"><a href="#">Preview</a></span>
-                  </div>
-                </div>
-                <!-- item -->
-                <div class="video-item active">
-                  <div class="desc me-5">
-                    <!-- icon -->
-                    <span class="icon me-2"><i class="fa-solid fa-circle-play"></i></span>
-                    <!-- title -->
-                    <span class="title">Introduction of Editing</span>
-                  </div>
-                  <div class="preview">
-                    <!-- time -->
-                    <span class="duration">10:29min</span>
-                    <span class="play"><a href="#">Preview</a></span>
-                  </div>
-                </div>
-                <!-- item -->
-                <div class="video-item">
-                  <div class="desc me-5">
-                    <!-- icon -->
-                    <span class="icon me-2"><i class="fa-solid fa-circle-play"></i></span>
-                    <!-- title -->
-                    <span class="title">Introduction of Editing</span>
-                  </div>
-                  <div class="preview">
-                    <!-- time -->
-                    <span class="duration">10:29min</span>
-                    <!-- <span class="play"><a href="#">Preview</a></span> -->
-                    <span class="locked"><a href="#"><i class="fa-solid fa-lock"></i></a></span>
-                  </div>
-                </div>
+                </form>
+
               </div>
             </div>
 
-
+            <div class="tab-pane fade" id="v-pills-logout" role="tabpanel" aria-labelledby="v-pills-logout-tab" tabindex="0">...</div>
           </div>
         </div>
-
-
-
-        <!-- right -->
-        <div class="col-4">
-          <!-- latest course -->
-          <div class="details latest-course">
-            <!-- title -->
-            <div class="item main-title">
-              <h4 class="title">Latest Course</h4>
-            </div>
-            <!-- item course -->
-            <div class="item-course">
-              <!-- img -->
-              <div class="img">
-                <a href="#">
-                  <img src="img/course/1.jpg" alt="">
-                </a>
+      </div>
+    </div>
+    
+    <!-- Subscribe To The Savour Newsletter -->
+    <div class="subscribe py-5">
+      <div class="container">
+        <div class="row">
+          <!-- left -->
+          <div class="col-lg-8 col-md-6">
+            <h3 class="title">Subscribe To The Savour Newsletter</h3>
+            <h4 class="sec-title fw-normal">Get A Cheeky 10% Off Your First Online Retail Purchase</h4>
+            <p class="desc mt-3">
+              Be The First To Receive Latest Updates On Our Online Classes,</br>
+              Retail Offers, Giveaways & Exclusive Tips & Tricks.
+            </p>
+          </div>
+          <!-- right -->
+          <div class="col-lg-4 col-md-6">
+            <form action="">
+              <div class="email-section">
+                <input type="email" class="email" placeholder="Enter your email" aria-label="email" required>
+                <button type="submit" class="submit"><i class="fa-solid fa-arrow-right"></i></button>
               </div>
-              <!-- description -->
-              <div class="desc">
-                <div class="title"><a href="#">The Special HTML & CSS</a></div>
-                <div class="stars">
-                  <span class="star active" data-rating="1">&#9733;</span>
-                  <span class="star active" data-rating="2">&#9733;</span>
-                  <span class="star active" data-rating="3">&#9733;</span>
-                  <span class="star active" data-rating="4">&#9733;</span>
-                  <span class="star active" data-rating="5">&#9733;</span>
-                  <span class="rate-num">(10)</span>
-                </div>
-                <div class="price">20 $</div>
-              </div>
-            </div>
-            <!-- item course -->
-            <div class="item-course">
-              <!-- img -->
-              <div class="img">
-                <a href="#">
-                  <img src="img/course/1.jpg" alt="">
-                </a>
-              </div>
-              <!-- description -->
-              <div class="desc">
-                <div class="title"><a href="#">The Special HTML & CSS</a></div>
-                <div class="stars">
-                  <span class="star active" data-rating="1">&#9733;</span>
-                  <span class="star active" data-rating="2">&#9733;</span>
-                  <span class="star active" data-rating="3">&#9733;</span>
-                  <span class="star active" data-rating="4">&#9733;</span>
-                  <span class="star active" data-rating="5">&#9733;</span>
-                  <span class="rate-num">(10)</span>
-                </div>
-                <div class="price">687 LE</div>
-              </div>
-            </div>
-            <!-- item course -->
-            <div class="item-course">
-              <!-- img -->
-              <div class="img">
-                <a href="#">
-                  <img src="img/course/1.jpg" alt="">
-                </a>
-              </div>
-              <!-- description -->
-              <div class="desc">
-                <div class="title"><a href="#">The Special HTML & CSS</a></div>
-                <div class="stars">
-                  <span class="star active" data-rating="1">&#9733;</span>
-                  <span class="star active" data-rating="2">&#9733;</span>
-                  <span class="star active" data-rating="3">&#9733;</span>
-                  <span class="star active" data-rating="4">&#9733;</span>
-                  <span class="star active" data-rating="5">&#9733;</span>
-                  <span class="rate-num">(10)</span>
-                </div>
-                <div class="price">20 $</div>
-              </div>
-            </div>
-            <!-- item course -->
-            <div class="item-course">
-              <!-- img -->
-              <div class="img">
-                <a href="#">
-                  <img src="img/course/1.jpg" alt="">
-                </a>
-              </div>
-              <!-- description -->
-              <div class="desc">
-                <!-- title -->
-                <div class="title"><a href="#">The Special HTML & CSS CSS CSS</a></div>
-                <div class="stars">
-                  <span class="star active" data-rating="1">&#9733;</span>
-                  <span class="star active" data-rating="2">&#9733;</span>
-                  <span class="star active" data-rating="3">&#9733;</span>
-                  <span class="star active" data-rating="4">&#9733;</span>
-                  <span class="star active" data-rating="5">&#9733;</span>
-                  <span class="rate-num">(10)</span>
-                </div>
-                <div class="price">1500 LE</div>
-              </div>
-            </div>
-
-
-
+            </form>
           </div>
         </div>
       </div>

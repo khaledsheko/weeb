@@ -12,6 +12,18 @@ var swiper = new Swiper(".dessertSwiper", {
     },
   },
 });
+var swiper = new Swiper(".ordersSwiper", {
+  spaceBetween: 30,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 var swiper = new Swiper(".ratesSwiper", {
   spaceBetween: 30,
   freeMode: true,
@@ -137,4 +149,91 @@ $(document).ready(function () {
   let myElemen = $('.video-page .comment-main .comment-item').length;
   let myElement = $('.video-page .comment-main .title')
   myElement.text('Comments (' + myElemen + '):')
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+  $(".product-buy-form #decreaseBtn").click(function() {
+    decreaseQuantity();
+  });
+  
+  $(".product-buy-form #increaseBtn").click(function() {
+    increaseQuantity();
+  });
+
+  function decreaseQuantity() {
+    var quantityInput = $(".product-buy-form #quantity");
+    var currentValue = parseInt(quantityInput.val());
+    var minValue = parseInt(quantityInput.attr("min"));
+    if (currentValue > minValue) {
+      quantityInput.val(currentValue - 1);
+    }
+  }
+
+  function increaseQuantity() {
+    var quantityInput = $(".product-buy-form #quantity");
+    var currentValue = parseInt(quantityInput.val());
+    var maxValue = parseInt(quantityInput.attr("max"));
+    if (currentValue < maxValue) {
+      quantityInput.val(currentValue + 1);
+    }
+  }
+});
+
+
+// $(document).ready(function() {
+//   $(".product-buy .side-img .thumbnail .img-item").click(function() {
+//     var imageUrl = $(this).find("img").attr("src");
+//     $(".product-buy .side-img .img-show img").attr("src", imageUrl);
+//   });
+// });
+
+
+$(document).ready(function() {
+  $(".product-buy .side-img .thumbnail .img-item").click(function() {
+    // Remove "active" class from all thumbnails
+    $(".product-buy .side-img .thumbnail .img-item").removeClass("active");
+    // Add "active" class to the clicked thumbnail
+    $(this).addClass("active");
+    // Get the image source from the clicked thumbnail
+    var imageUrl = $(this).find("img").attr("src");
+    var mainImage = $(".product-buy .side-img .img-show img");
+    // Fade out the main image, update its source, and fade it back in
+    mainImage.fadeOut(150, function() {
+      mainImage.attr("src", imageUrl).fadeIn(150);
+    });
+  });
+});
+
+
+
+
+
+$(document).ready(function(){
+  // close side cart
+  $('.main-cart-shop .back, .main-cart-shop .close-cart').click(function() {
+    $('.main-cart-shop').fadeOut();
+    $('.main-cart-shop .section').css('margin-right', '-400px');
+  });
+  // open side cart
+  $('.navbar .icons .cart svg').click(function() {
+    $('.main-cart-shop').fadeIn();
+    $('.main-cart-shop .section').css('margin-right', '0px');
+  });
+
 });
