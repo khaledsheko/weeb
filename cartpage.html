@@ -72,7 +72,7 @@
   </div>
   <div class="header-page text-center">
     <div class="title">
-      <h1>Dashboard</h1>
+      <h1>Cart Page</h1>
     </div>
   </div>
   <div class="cart-page">
@@ -85,9 +85,9 @@
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">Item</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Price</th>
+                <th scope="col"><h5>Item</h5></th>
+                <th scope="col" class="text-center"><h5>Quantity</h5></th>
+                <th scope="col" class="text-center"><h5>Price</h5></th>
               </tr>
             </thead>
             <tbody>
@@ -95,7 +95,7 @@
               <!-- item -->
               <tr class="item py-5">
                 <td class="img">
-                  <span>
+                  <span class="del-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
                       <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
                       <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
@@ -104,17 +104,134 @@
                   <a href="#"><img src="img/course/1.jpg" alt=""></a>
                   <a href="#" class="p-name">Miel18 Silicone Mould</a>
                 </td>
-                <td class="quantity">3</td>
-                <td class="price">30$</td>
+                <td class="quantity text-center">3</td>
+                <td class="price text-center">30$</td>
               </tr>
 
+              <!-- item -->
+              <tr class="item py-5">
+                <td class="img">
+                  <span class="del-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+                      <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                    </svg>
+                  </span>
+                  <a href="#"><img src="img/course/1.jpg" alt=""></a>
+                  <a href="#" class="p-name">Miel18 Silicone Mould</a>
+                </td>
+                <td class="quantity text-center">3</td>
+                <td class="price text-center">30$</td>
+              </tr>
+              
             </tbody>
           </table>
         </div>
 
         <!-- right -->
         <div class="col-4">
+          <div class="summary">
+            <!-- title -->
+            <h5 class="title-section">Summary</h5>
+            <!-- Subtotal-->
+            <div class="subtotal summary-item">
+              <div class="title">Subtotal</div>
+              <div class="num">273.00$</div>
+            </div>
+            <!-- Tax -->
+            <div class="tax summary-item">
+              <div class="title">Tax</div>
+              <div class="num">27$</div>
+            </div>
+            <!-- Total -->
+            <div class="total-price summary-item">
+              <div class="title">Total</div>
+              <div class="num">300$</div>
+            </div>
+            <!-- button -->
+            <a href="#" class="summary-btn rounded-pill">Checkout <span class="checkout-price">300$</span></a>
+          </div>
+        </div>
 
+        <!-- course you may like -->
+        <div class="col-12">
+          <div class="also-like">
+            <h3 class="title-section">You May Also Like</h3>
+            <div class="swiper dessertSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="item">
+                    <!-- icon cart -->
+                    <div class="cart-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" fill="none" class="injected-svg svg_inject">
+                        <path d="M2.20104 4.7352C2.20968 4.65839 2.27464 4.60033 2.35194 4.60033H13.2785C13.3558 4.60033 13.4208 4.65839 13.4294 4.7352L14.7942 16.8665C14.8043 16.9565 14.7339 17.0353 14.6433 17.0353H0.987175C0.896585 17.0353 0.826147 16.9565 0.836274 16.8665L2.20104 4.7352Z" stroke="#08070B" stroke-width="1.06296"></path>
+                        <path d="M5.53613 6.17791V3.28852C5.53613 2.03054 6.55593 1.01074 7.81391 1.01074C9.07189 1.01074 10.0917 2.03054 10.0917 3.28852V6.17791" stroke="#08070B" stroke-width="1.06296"></path>
+                      </svg>
+                    </div>
+                    <div class="img"><img src="img/item.jpg" alt="" class=""></div>
+                    <div class="title"><span>Callebaut 811 54.5% Dark Chocolate Callets 2.5kg</span></div>
+                    <div class="price"><span>$69.00</span></div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="item">
+                    <!-- icon cart -->
+                    <div class="cart-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" fill="none" class="injected-svg svg_inject">
+                        <path d="M2.20104 4.7352C2.20968 4.65839 2.27464 4.60033 2.35194 4.60033H13.2785C13.3558 4.60033 13.4208 4.65839 13.4294 4.7352L14.7942 16.8665C14.8043 16.9565 14.7339 17.0353 14.6433 17.0353H0.987175C0.896585 17.0353 0.826147 16.9565 0.836274 16.8665L2.20104 4.7352Z" stroke="#08070B" stroke-width="1.06296"></path>
+                        <path d="M5.53613 6.17791V3.28852C5.53613 2.03054 6.55593 1.01074 7.81391 1.01074C9.07189 1.01074 10.0917 2.03054 10.0917 3.28852V6.17791" stroke="#08070B" stroke-width="1.06296"></path>
+                      </svg>
+                    </i></div>
+                    <div class="img"><img src="img/item.jpg" alt="" class=""></div>
+                    <div class="title"><span>Callebaut 811 54.5% Dark Chocolate Callets 2.5kg</span></div>
+                    <div class="price"><span>$69.00</span></div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="item">
+                    <!-- icon cart -->
+                    <div class="cart-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" fill="none" class="injected-svg svg_inject">
+                        <path d="M2.20104 4.7352C2.20968 4.65839 2.27464 4.60033 2.35194 4.60033H13.2785C13.3558 4.60033 13.4208 4.65839 13.4294 4.7352L14.7942 16.8665C14.8043 16.9565 14.7339 17.0353 14.6433 17.0353H0.987175C0.896585 17.0353 0.826147 16.9565 0.836274 16.8665L2.20104 4.7352Z" stroke="#08070B" stroke-width="1.06296"></path>
+                        <path d="M5.53613 6.17791V3.28852C5.53613 2.03054 6.55593 1.01074 7.81391 1.01074C9.07189 1.01074 10.0917 2.03054 10.0917 3.28852V6.17791" stroke="#08070B" stroke-width="1.06296"></path>
+                      </svg>
+                    </i></div>
+                    <div class="img"><img src="img/item.jpg" alt="" class=""></div>
+                    <div class="title"><span>Callebaut 811 54.5% Dark Chocolate Callets 2.5kg</span></div>
+                    <div class="price"><span>$69.00</span></div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="item">
+                    <!-- icon cart -->
+                    <div class="cart-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" fill="none" class="injected-svg svg_inject">
+                        <path d="M2.20104 4.7352C2.20968 4.65839 2.27464 4.60033 2.35194 4.60033H13.2785C13.3558 4.60033 13.4208 4.65839 13.4294 4.7352L14.7942 16.8665C14.8043 16.9565 14.7339 17.0353 14.6433 17.0353H0.987175C0.896585 17.0353 0.826147 16.9565 0.836274 16.8665L2.20104 4.7352Z" stroke="#08070B" stroke-width="1.06296"></path>
+                        <path d="M5.53613 6.17791V3.28852C5.53613 2.03054 6.55593 1.01074 7.81391 1.01074C9.07189 1.01074 10.0917 2.03054 10.0917 3.28852V6.17791" stroke="#08070B" stroke-width="1.06296"></path>
+                      </svg>
+                    </div>
+                    <div class="img"><img src="img/item.jpg" alt="" class=""></div>
+                    <div class="title"><span>Callebaut 811 54.5% Dark Chocolate Callets 2.5kg</span></div>
+                    <div class="price"><span>$69.00</span></div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="item">
+                    <!-- icon cart -->
+                    <div class="cart-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18" fill="none" class="injected-svg svg_inject">
+                        <path d="M2.20104 4.7352C2.20968 4.65839 2.27464 4.60033 2.35194 4.60033H13.2785C13.3558 4.60033 13.4208 4.65839 13.4294 4.7352L14.7942 16.8665C14.8043 16.9565 14.7339 17.0353 14.6433 17.0353H0.987175C0.896585 17.0353 0.826147 16.9565 0.836274 16.8665L2.20104 4.7352Z" stroke="#08070B" stroke-width="1.06296"></path>
+                        <path d="M5.53613 6.17791V3.28852C5.53613 2.03054 6.55593 1.01074 7.81391 1.01074C9.07189 1.01074 10.0917 2.03054 10.0917 3.28852V6.17791" stroke="#08070B" stroke-width="1.06296"></path>
+                      </svg>
+                    </div>
+                    <div class="img"><img src="img/item.jpg" alt="" class=""></div>
+                    <div class="title"><span>Callebaut 811 54.5% Dark Chocolate Callets 2.5kg</span></div>
+                    <div class="price"><span>$69.00</span></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
