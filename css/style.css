@@ -1083,6 +1083,14 @@ a{
   padding-bottom: 25px;
   color: var(--color);
 }
+/* shop cart page */
+.cart-page .item img{
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
 /* shop cart slide */
 .main-cart-shop{
   height: 100vh;
@@ -1158,8 +1166,12 @@ a{
   cursor: pointer;
 }
 .main-cart-shop .section .cart-item .info .del-item svg{
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
+  transition: .2s;
+}
+.main-cart-shop .section .cart-item .info .del-item svg:hover{
+  color: var(--btn-color)
 }
 .main-cart-shop .section .cart-footer{
   position: absolute;
@@ -1277,34 +1289,28 @@ a{
   border: none;
   margin-top: 25px;
 }
-.user-dashboard .ordersSwiper{
-  width: 75%;
-  padding-bottom: 70px;
+.user-dashboard .tab-content .orders .table thead th,
+.user-dashboard .tab-content .subscriptions .table thead th{
+  color: var(--black);
 }
-.user-dashboard .ordersSwiper .swiper-button-prev::after,
-.user-dashboard .ordersSwiper .swiper-button-next::after{
-  content: none;
+.user-dashboard .tab-content .orders .table tbody td,
+.user-dashboard .tab-content .subscriptions .table tbody td{
+  color: var(--color-1);
 }
-.user-dashboard .ordersSwiper .swiper-button-prev{
-  left: 50%;
-  transform: translateX(-150%);
+.user-dashboard .tab-content .subscriptions .table tbody td.c-name a{
+  color: var(--color-1);
+  transition: .2s;
 }
-.user-dashboard .ordersSwiper .swiper-button-next{
-  right: 50%;
-  transform: translateX(150%);
-}
-.user-dashboard .ordersSwiper .swiper-button-next,
-.user-dashboard .ordersSwiper .swiper-button-prev{
-  width: 35px;
-  height: 35px;
+.user-dashboard .tab-content .subscriptions .table tbody td.c-name a:hover{
   color: var(--btn-color);
 }
-.user-dashboard .ordersSwiper .buttons-swiper{
-  position: absolute;
-  display: flex;
-  justify-content: space-around;
-  bottom: 15px;
-  width: 100%;
+.user-dashboard .tab-content .subscriptions .table tbody td.c-lessons a{
+  background-color: rgb(255 195 147);
+  color: rgb(51 51 51);
+  margin-left: 5px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-weight: 500;
 }
 /* contact us */
 .contact-us{
@@ -1381,3 +1387,12 @@ a{
 .contact-us .contact-form .form-floating label{
   color: var(--color-1);
 }
+
+
+
+
+
+
+
+
+

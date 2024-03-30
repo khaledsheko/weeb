@@ -12,18 +12,6 @@ var swiper = new Swiper(".dessertSwiper", {
     },
   },
 });
-var swiper = new Swiper(".ordersSwiper", {
-  spaceBetween: 30,
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-    },
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
 var swiper = new Swiper(".ratesSwiper", {
   spaceBetween: 30,
   freeMode: true,
@@ -130,7 +118,6 @@ function divLoop(getDiv,myDiv,numb) {
 }
 divLoop(courseItem,itemC,5)
 
-
 // rates using chatgpt
 $(document).ready(function() {
   // Click event to set the rating
@@ -145,28 +132,14 @@ $(document).ready(function() {
   });
 });
 
+// 
 $(document).ready(function () {
   let myElemen = $('.video-page .comment-main .comment-item').length;
   let myElement = $('.video-page .comment-main .title')
   myElement.text('Comments (' + myElemen + '):')
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// product-buy-form
 $(document).ready(function() {
   $(".product-buy-form #decreaseBtn").click(function() {
     decreaseQuantity();
@@ -195,18 +168,12 @@ $(document).ready(function() {
   }
 });
 
-
-// $(document).ready(function() {
-//   $(".product-buy .side-img .thumbnail .img-item").click(function() {
-//     var imageUrl = $(this).find("img").attr("src");
-//     $(".product-buy .side-img .img-show img").attr("src", imageUrl);
-//   });
-// });
-
-
+// product-buy thumbnail
 $(document).ready(function() {
   $(".product-buy .side-img .thumbnail .img-item").click(function() {
     // Remove "active" class from all thumbnails
+    if($(this).hasClass('active'))
+      return false;
     $(".product-buy .side-img .thumbnail .img-item").removeClass("active");
     // Add "active" class to the clicked thumbnail
     $(this).addClass("active");
@@ -220,10 +187,7 @@ $(document).ready(function() {
   });
 });
 
-
-
-
-
+// slide cart
 $(document).ready(function(){
   // close side cart
   $('.main-cart-shop .back, .main-cart-shop .close-cart').click(function() {
@@ -235,5 +199,10 @@ $(document).ready(function(){
     $('.main-cart-shop').fadeIn();
     $('.main-cart-shop .section').css('margin-right', '0px');
   });
-
+  // Add click event listener to elements with class "del-item"
+  $(".del-item").click(function() {
+    // Get the closest parent element with class "cart-item" and remove it
+    $(this).closest(".cart-item").fadeOut(150);
+  });
 });
+
