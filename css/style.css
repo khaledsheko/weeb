@@ -263,7 +263,8 @@ a{
   margin: 0px 10px;
 }
 .dessert .item,
-.also-like .swiper-slide .item{
+.also-like .swiper-slide .item,
+.products-page .product-section .item{
   position: relative;
   background: var(--back-icon);
   display: flex;
@@ -276,7 +277,8 @@ a{
   text-align: center;
 }
 .dessert .item .cart-icon,
-.also-like .swiper-slide .item .cart-icon{
+.also-like .swiper-slide .item .cart-icon,
+.products-page .product-section .item .cart-icon{
   position: absolute;
   top: 10px;
   right: 15px;
@@ -285,7 +287,8 @@ a{
   padding: 5px;
 }
 .dessert .item .cart-icon svg,
-.also-like .swiper-slide .item .cart-icon svg{
+.also-like .swiper-slide .item .cart-icon svg,
+.products-page .product-section .item .cart-icon svg{
   stroke: var(--black);
   font-size: 16px;
   width: 17px!important;
@@ -294,7 +297,8 @@ a{
   position: relative;
 }
 .dessert .item .cart-icon::after,
-.also-like .swiper-slide .item .cart-icon::after{
+.also-like .swiper-slide .item .cart-icon::after,
+.products-page .product-section .item .cart-icon::after{
   content: '';
   position: absolute;
   top: 5px;
@@ -304,7 +308,8 @@ a{
   background-color: var(--black);
 }
 .dessert .item .cart-icon::before,
-.also-like .swiper-slide .item .cart-icon::before{
+.also-like .swiper-slide .item .cart-icon::before,
+.products-page .product-section .item .cart-icon::before{
   content: '';
   position: absolute;
   top: 3px;
@@ -314,31 +319,38 @@ a{
   background-color: var(--black);
 }
 .dessert .item .cart-icon:hover svg path,
-.also-like .swiper-slide .item .cart-icon:hover svg path{
+.also-like .swiper-slide .item .cart-icon:hover svg path,
+.products-page .product-section .item .cart-icon:hover svg path{
   stroke: var(--btn-color);
   transition: .2s;
 }
 .dessert .item .cart-icon:hover::before,
 .dessert .item .cart-icon:hover::after,
 .also-like .swiper-slide .item .cart-icon:hover::before,
-.also-like .swiper-slide .item .cart-icon:hover::after{
+.also-like .swiper-slide .item .cart-icon:hover::after,
+.products-page .product-section .item .cart-icon:hover::before,
+.products-page .product-section .item .cart-icon:hover::after{
   background-color: var(--btn-color);
   transition: .2s;
 }
 .dessert .item img,
-.also-like .swiper-slide .item img{
+.also-like .swiper-slide .item img,
+.products-page .product-section .item img{
   height: 250px;
   max-width: 100%;
   margin-top: 25px;
   margin-bottom: 25px;
   padding: 15px;
+  transition: .4s;
 }
 .dessert .item .title,
-.also-like .swiper-slide .item .title{
+.also-like .swiper-slide .item .title,
+.products-page .product-section .item .title{
   padding: 0px 15px;
 }
 .dessert .item .price,
-.also-like .swiper-slide .item .price{
+.also-like .swiper-slide .item .price,
+.products-page .product-section .item .price{
   margin-top: 15px;
   padding-top: 10px;
   border-top: 1px solid var(--semi-white);
@@ -1096,6 +1108,7 @@ a{
 }
 .cart-page table thead{
   border-bottom: 1px solid var(--color-1);
+  font-weight: 600;
 }
 .cart-page table .item td{
   line-height: 40px;
@@ -1106,6 +1119,13 @@ a{
   cursor: pointer;
   margin-right: 15px;
 }
+.cart-page table .item .p-name{
+  color: var(--color-1);
+  transition: .2s;
+}
+.cart-page table .item .p-name:hover{
+  color: var(--btn-color);
+}
 .cart-page .summary{
   font-weight: 600;
 }
@@ -1113,6 +1133,7 @@ a{
   padding-bottom: 15px;
   padding-top: 8px;
   border-bottom: 1px solid var(--color-1);
+  font-weight: 600;
 }
 .cart-page .summary .summary-item{
   display: flex;
@@ -1425,12 +1446,44 @@ a{
 .contact-us .contact-form .form-floating label{
   color: var(--color-1);
 }
-
-
-
-
-
-
-
-
-
+/* products page */
+.products-page{
+  padding-top: 50px;
+}
+/* .products-page .tabs-link .title{
+  font-weight: 600;
+  border-top: 1px solid var(--color-1);
+  padding: 15px 5px;
+  background-color: var(--back-icon);
+} */
+.products-page .tabs-link{
+  padding-top: 15px;
+  border-top: 1px solid var(--semi-white);
+}
+.products-page .tabs-link .item{
+  padding: 10px 5px;
+}
+.products-page .tabs-link .item a{
+  color: var(--color-1);
+  transition: .2s;
+}
+.products-page .tabs-link .item a:hover{
+  color: var(--black);
+}
+.products-page .tabs-link .item a.active{
+  color: var(--black);
+  font-weight: 600;
+}
+.products-page .product-section .item{
+  margin-bottom: 25px;
+}
+.products-page .product-section .show-more a{
+  padding: 15px 40px;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  transition: .2s;
+}
+.products-page .product-section .show-more a:hover{
+  background: var(--btn-color);
+  color: var(--white);
+}

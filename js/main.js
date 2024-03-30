@@ -206,3 +206,13 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function() {
+  $('.products-page .product-section .item, .also-like .swiper-slide .item, .dessert .item').hover(
+    function() {
+      $(this).find('.img img').css('transform', 'scale(1.05)');
+    },
+    function() {
+      $(this).find('.img img').css('transform', 'scale(1)');
+    }
+  );
+});
