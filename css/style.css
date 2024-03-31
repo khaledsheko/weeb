@@ -1487,3 +1487,32 @@ a{
   background: var(--btn-color);
   color: var(--white);
 }
+/* hands on classes */
+.hands-page .description{
+  padding: 100px 0px;
+  background-color: var(--btn-color);
+  color: var(--back-icon);
+}
+.hands-page .title-section{
+  margin: 50px 0;
+}
+.hands-page .item{
+  margin-bottom: 50px;
+}
+.hands-page .item .item-desc{
+  margin: 15px 0;
+  color: var(--color-1);
+  padding-right: 15px;
+}
+.hands-page .item .img{
+  height: 300px;
+  overflow: hidden;
+}
+.hands-page .item .img img{
+  min-height: 100%;
+}
+.hands-page .item .item-title{
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--black);
+}

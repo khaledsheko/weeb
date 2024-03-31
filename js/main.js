@@ -70,54 +70,6 @@ $(document).ready(function() {
   );
 });
 
-let courseItem = $('.courses .row');
-let itemC = `<!-- item -->
-            <div class="col-lg-4 col-md-6 col-sm-12 item mb-5">
-              <div class="img">
-                <a href="#"><img src="img/course/1.jpg" alt=""></a>
-                <div class="buy">
-                  <a href="#">More Details</a>
-                </div>
-              </div>
-              <div class="description">
-                <div class="prices">
-                  <div class="price">30 $</div>
-                  <div class="price">1500 LE</div>
-                </div>
-                <div class="category"><span><a href="#">Business</a></span></div>
-                <div class="title"><h5><a href="#">Starting SEO as your Home Based Business</a></h5></div>
-                <div class="rate"><span>
-                <div class="star-rating">
-                  <span class="star" data-rating="1">&#9733;</span>
-                  <span class="star" data-rating="2">&#9733;</span>
-                  <span class="star" data-rating="3">&#9733;</span>
-                  <span class="star" data-rating="4">&#9733;</span>
-                  <span class="star" data-rating="5">&#9733;</span>
-                </div> 
-                </span></div>
-                <div class="desc">Lorem ipsum dolor sit amet consectur adipiscing elit, sed do eiusmod tempor</div>
-                <div class="groups d-flex">
-                  <div class="lessons me-4">
-                    <span class="icon me-1"><i class="fa-solid fa-book"></i></span>
-                    <span class="num">11</span>
-                    <span class="text">Lessons</span>
-                  </div>
-                  <div class="students">
-                    <span class="icon me-1"><i class="fa-solid fa-user"></i></span>
-                    <span class="num">229</span>
-                    <span class="text">Students</span>
-                  </div>
-                </div>
-              </div>
-            </div>`
-
-function divLoop(getDiv,myDiv,numb) {
-  for (let i = 0; i < numb; i++) {
-      getDiv.append(myDiv)
-  }
-}
-divLoop(courseItem,itemC,5)
-
 // rates using chatgpt
 $(document).ready(function() {
   // Click event to set the rating
@@ -139,7 +91,7 @@ $(document).ready(function () {
   myElement.text('Comments (' + myElemen + '):')
 });
 
-// product-buy-form
+// product-buy-form quantity
 $(document).ready(function() {
   $(".product-buy-form #decreaseBtn").click(function() {
     decreaseQuantity();
@@ -199,11 +151,11 @@ $(document).ready(function(){
     $('.main-cart-shop').fadeIn();
     $('.main-cart-shop .section').css('margin-right', '0px');
   });
-  // Add click event listener to elements with class "del-item"
-  $(".del-item").click(function() {
-    // Get the closest parent element with class "cart-item" and remove it
-    $(this).closest(".cart-item").fadeOut(150);
-  });
+  // // Add click event listener to elements with class "del-item"
+  // $(".del-item").click(function() {
+  //   // Get the closest parent element with class "cart-item" and remove it
+  //   $(this).closest(".cart-item").fadeOut(150);
+  // });
 });
 
 $(document).ready(function() {
