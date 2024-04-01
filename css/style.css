@@ -1490,8 +1490,9 @@ a{
 /* hands on classes */
 .hands-page .description{
   padding: 100px 0px;
-  background-color: var(--btn-color);
-  color: var(--back-icon);
+  color: var(--black);
+  border-bottom: 1px solid var(--line-color);
+  margin-bottom: 25px;
 }
 .hands-page .title-section{
   margin: 50px 0;
@@ -1515,4 +1516,169 @@ a{
   font-weight: 600;
   font-size: 18px;
   color: var(--black);
+}
+/* payment page */
+.payment-page .sec-title{
+  border-bottom: 1px solid var(--semi-white);
+  padding: 50px 0;
+}
+/* left */
+.payment-page .payment-details .form-floating label{
+  color: var(--color-1);
+}
+.payment-page .payment-details .form-floating .form-control{
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid var(--line-color);
+  border-radius: 0;
+}
+/* right */
+.payment-page .pay-section table th{
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-1);
+}
+.payment-page .pay-section table tr td{
+  padding: 20px 0;
+}
+.payment-page .pay-section .accordion .accordion-item{
+  color: var(--color-1);
+}
+.payment-page .pay-section .accordion .accordion-item .form-label{
+  color: var(--black);
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.payment-page .pay-section .accordion .accordion-item .form-control{
+  box-shadow: none;
+}
+.payment-page .pay-section .accordion .accordion-item .form-control:focus{
+  border-color: var(--btn-color);
+}
+.payment-page .pay-section .accordion .accordion-item .hint-payment,
+.payment-page .pay-section .accordion .accordion-item .desc-payment{
+  margin: 15px 0;
+  text-align: justify;
+  font-size: 15px;
+}
+.payment-page .pay-section .accordion .accordion-button:not(.collapsed) {
+  color: var(--color-1);
+  background-color: var(--back-icon);
+  box-shadow: none;
+}
+.payment-page .pay-section .accordion .accordion-button:focus {
+  border-color: none;
+  box-shadow: none;
+}
+.payment-page .pay-section .submit-button{
+  padding: 15px 0;
+  background-color: var(--btn-color);
+  color: var(--white);
+  border: none;
+  outline: none;
+  margin-top: 25px;
+  font-weight: 600;
+}
+.payment-page .pay-section .form-check{
+  text-align: center;
+}
+.payment-page .pay-section .form-check label{
+  cursor: pointer;
+}
+.payment-page .pay-section .form-check label a{
+  color: var(--btn-color);
+}
+.payment-page .pay-section .form-check-input{
+  float: none;
+  margin-left: 0;
+  cursor: pointer;
+}
+.payment-page .pay-section .form-check-input:focus{
+  box-shadow: none;
+}
+.payment-page .pay-section .form-check-input:checked {
+  background-color: var(--btn-color);
+  border-color: var(--btn-color);
+}
+/* about us */
+.about-us .who-we-are,
+.about-us .why-choose{
+  padding: 100px 0;
+}
+.about-us .why-choose{
+  background: var(--back-icon);
+}
+.about-us .why-choose .item{
+  background: #fcfcfc;
+  border-radius: 5px;
+}
+.about-us .why-choose .item .img{
+  height: 300px;
+  position: relative;
+}
+.about-us .why-choose .item .img img{
+  height: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
+.about-us .why-choose .item .main-des{
+  position: relative;
+}
+.about-us .why-choose .item .description{
+  padding: 0px 20px 25px;
+}
+.about-us .why-choose .item .icon{
+  background: var(--btn-color);
+  color: var(--white);
+  position: relative;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: -45px;
+  margin-bottom: 15px;
+}
+.about-us .why-choose .item .icon svg{
+  font-size: 27px;
+}
+.about-us .why-choose .item .description .title{
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.about-us .why-choose .item .description .desc{
+  padding: 0px 40px;
+}
+.about-us .why-choose .head-section{
+  margin-bottom: 45px;
+}
+.about-us .why-choose .head-section .small-title{
+  color: var(--color-1);
+}
+.about-us .why-choose .head-section .big-title{
+  margin-top: 10px;
+}
+.about-us .why-choose .head-section .big-title span{
+  color: #e73b3b;
+}
+.about-us .get-started{
+  padding: 100px 0px;
+  text-align: center;
+  /* background: #f5f5f5; */
+}
+.about-us .get-started .link-section{
+  background: #e73b3b;
+  color: white;
+  padding: 15px 30px;
+  display: inline-block;
+  margin-top: 15px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.about-us .get-started .link-section svg{
+  transition: .2s;
+
+}
+.about-us .get-started .link-section:hover svg{
+  transform: translateX(5px);
 }

@@ -168,3 +168,30 @@ $(document).ready(function() {
     }
   );
 });
+
+
+
+
+
+$(document).ready(function() {
+  // Card Number validation
+  $('.card-payment').on('input', function() {
+    $(this).val(function(i, val) {
+      return val.replace(/\D/g, '').slice(0, 14);
+    });
+  });
+
+  // Expiration Date validation
+  $('.date-payment').on('input', function() {
+    $(this).val(function(i, val) {
+      return val.replace(/\D/g, '').replace(/(\d{2})(\d)/, '$1/$2').slice(0, 7);
+    });
+  });
+
+  // CVV validation
+  $('.cvv-payment').on('input', function() {
+    $(this).val(function(i, val) {
+      return val.replace(/\D/g, '').slice(0, 3);
+    });
+  });
+});
