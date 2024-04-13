@@ -1532,7 +1532,7 @@ a{
   color: var(--black);
 }
 /* payment page */
-.payment-page .sec-title{
+.payment-page .main-sec-title{
   border-bottom: 1px solid var(--semi-white);
   padding: 50px 0;
 }
@@ -1552,7 +1552,18 @@ a{
   border-bottom: 1px solid var(--color-1);
 }
 .payment-page .pay-section table tr td{
-  padding: 20px 0;
+  padding: 12px 0;
+  line-height: 30px;
+}
+.payment-page .pay-section table tr td.total,
+.payment-page .pay-section table tr td.total-num{
+  font-weight: 700;
+}
+.payment-page .pay-section table tr .item-img{
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  margin-right: 5px;
 }
 .payment-page .pay-section .accordion .accordion-item{
   color: var(--color-1);
@@ -1565,6 +1576,7 @@ a{
 }
 .payment-page .pay-section .accordion .accordion-item .form-control{
   box-shadow: none;
+  border-color: var(--semi-white);
 }
 .payment-page .pay-section .accordion .accordion-item .form-control:focus{
   border-color: var(--btn-color);
@@ -1574,6 +1586,19 @@ a{
   margin: 15px 0;
   text-align: justify;
   font-size: 15px;
+}
+.payment-page .accordion-input{
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  margin-bottom: -3px;
+  accent-color: #b78521;
+}
+.payment-page .pay-section .accordion{
+  --bs-accordion-border-color: var(--semi-white);
+}
+.payment-page .accordion-header label{
+  cursor: pointer;
 }
 .payment-page .pay-section .accordion .accordion-button:not(.collapsed) {
   color: var(--color-1);

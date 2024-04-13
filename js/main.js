@@ -195,3 +195,12 @@ $(document).ready(function() {
     });
   });
 });
+
+
+
+
+$(document).ready(function() {
+  $('.payment-page .accordion-header').click(function() {
+      $(this).find('.accordion-input').prop('checked', true);
+  });
+});
