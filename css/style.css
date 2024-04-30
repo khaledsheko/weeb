@@ -595,63 +595,97 @@ a{
 .courses{
   padding: 100px 0;
 }
-.courses .img{
+.courses .img,
+.course-swip .img{
   position: relative;
   height: 250px;
   border-radius: 5px 5px 0px 0px;
   overflow: hidden;
 }
-.courses .img img{
+.courses .img img,
+.course-swip .img img{
   width: 100%;
   transition: .3s;
 }
-.courses .description{
+.courses .description,
+.course-swip .description{
   padding: 25px 15px;
   padding-right: 30px;
   background-color: #f5f5f5;
   position: relative;
   box-shadow: 0px 6px 15px -15px var(--black);
 }
-.courses .prices{
+.courses .prices,
+.course-swip .prices{
   position: absolute;
   top: 0;
   right: 0;
   transform: translate(-25px, -50%);
   display: flex;
 }
-.courses .price{
+.courses .price,
+.course-swip .price{
   padding: 5px 10px;
   background-color: var(--btn-color);
   color: var(--white);
   border-radius: 5px;
   font-size: 15px;
 }
-.courses .price:last-child{
+.courses .price:last-child,
+.course-swip .price:last-child{
   margin-left: 10px;
 }
-.courses .category{
+.courses .category,
+.course-swip .category{
   margin-bottom: 10px;
 }
-.courses .category a{
+.courses .category a,
+.course-swip .category a{
   color: var(--btn-color);
   padding: 1px 3px;
   border-radius: 3px;
   background-color: var(--white);
   font-size: 15px;
 }
-.courses .title a{
+.courses .title a,
+.course-swip .title a{
   color: var(--black);
 }
 .courses .title,
 .courses .rate,
-.courses .desc
+.courses .desc,
+.course-swip .title,
+.course-swip .rate,
+.course-swip .desc
 {
   margin-bottom: 5px;
 }
-.courses .groups{
+.courses .groups,
+.course-swip .groups{
   padding-top: 15px;
   color: #5c5b5b;
   font-size: 14px;
+}
+.course-swip{
+  margin-bottom: 25px;
+  padding-top: 25px;
+}
+.courses .img .buy,
+.course-swip .img .buy{
+  position: absolute;
+  top: 25px;
+  transition: .3s;
+  opacity: 0;
+  right: 25px;
+}
+.courses .img .buy a,
+.course-swip .img .buy a{
+  padding: 5px 15px;
+  font-size: 14px;
+  background-color: var(--btn-color);
+  color: var(--white);
+  border-radius: 4px;
+  box-shadow: 0px 1px 4px -1px var(--black);
 }
 .header-page{
   padding-top: 100px;
@@ -663,21 +697,7 @@ a{
   background: linear-gradient(0deg, rgba(255,251,246,1) 0%, rgba(252,244,236,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbf6",endColorstr="#fcf4ec",GradientType=1);  
 }
-.courses .img .buy{
-  position: absolute;
-  top: 25px;
-  transition: .3s;
-  opacity: 0;
-  right: 25px;
-}
-.courses .img .buy a{
-  padding: 5px 15px;
-  font-size: 14px;
-  background-color: var(--btn-color);
-  color: var(--white);
-  border-radius: 4px;
-  box-shadow: 0px 1px 4px -1px var(--black);
-}
+
 .star-rating {
   font-size: 24px;
   cursor: pointer;
@@ -713,7 +733,6 @@ a{
   cursor: default;
 }
 .course-subscribe .video-section .description .hint .star-rating .star{
-  color: var(--star-active);
   font-size: 16px;
   margin-right: 0;
   font-weight: 600;
@@ -1720,4 +1739,42 @@ a{
 }
 .about-us .get-started .link-section:hover svg{
   transform: translateX(5px);
+}
+
+
+
+
+
+
+
+.order-details{
+  margin-top: 50px;
+}
+.order-details .date-title{
+  background-color: var(--back-icon);
+  color: var(--black);
+  padding: 15px 0;
+}
+.order-details .table .item{
+  line-height: 80px;
+  font-weight: 500;
+}
+.order-details .table .item img{
+  width: 80px;
+  height: 80px; 
+  border-radius: 5px;
+}
+.order-details .table .item .p-name{
+  color: var(--black);
+  transition: .2s;
+  margin-left: 10px;
+}
+.order-details .table .item .p-name:hover{
+  color: var(--btn-color);
+}
+.order-details .table{
+  margin-bottom: 50px;
+}
+.order-details .billing-info{
+  margin-bottom: 50px;
 }

@@ -11,6 +11,29 @@ var swiper = new Swiper(".dessertSwiper", {
       slidesPerView: 4,
     },
   },
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
+});
+var swiper = new Swiper(".coursesSwiper", {
+  spaceBetween: 30,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+    
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
 });
 var swiper = new Swiper(".ratesSwiper", {
   spaceBetween: 30,
@@ -40,7 +63,7 @@ var swiper = new Swiper(".maylikeSwiper", {
 });
 
 $(document).ready(function() {
-  $('.courses .item').hover(
+  $('.courses .item, .coursesSwiper .item').hover(
     function() {
       $(this).find('img').css('transform', 'scale(1.1)');
       $(this).find('.buy').css('opacity', '1');
@@ -73,11 +96,11 @@ $(document).ready(function() {
 // rates using chatgpt
 $(document).ready(function() {
   // Click event to set the rating
-  $('.star-rating .star').click(function() {
+  $('.course-subscribe .tab-content .add-review .star-rating .star').click(function() {
     var clickedStar = $(this);
 
     // Remove 'active' class from all stars
-    $('.star-rating .star').removeClass('active');
+    $('.course-subscribe .tab-content .add-review .star-rating .star').removeClass('active');
     
     // Add 'active' class to clicked star and its previous siblings
     clickedStar.prevAll().addBack().addClass('active');
